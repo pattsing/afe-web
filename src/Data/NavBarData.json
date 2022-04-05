@@ -1,0 +1,33 @@
+[
+  {
+    "tabName": "Home",
+    "tabRoute": "/"
+  },
+  {
+    "tabName": "Art Works",
+    "tabMenu": ["Vasan1", "Vasan2"]
+  },
+  {
+    "tabName": "Environmental Themes",
+    "tabMenu": [
+      "Mother Earth",
+      "Climate Change",
+      "Biodiversity Loss",
+      "Plastic Pollution",
+      "Population Growth",
+      "Consumer Economy"
+    ]
+  },
+  {
+    "tabName": "How to Buy NFT",
+    "tabRoute": "/buy-nft"
+  },
+  {
+    "tabName": "FAQ",
+    "tabRoute": "/faq"
+  },
+  {
+    "tabName": "About Us",
+    "tabRoute": "/about"
+  }
+]
