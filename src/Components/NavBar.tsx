@@ -7,9 +7,12 @@ import Tabs from "@mui/material/Tabs";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import navBarData from "../Data/NavBarData.json";
+import { setNavState } from "../ReduxStore/NavBarSlice";
+import store from "../ReduxStore/store";
 
 const NavBar = () => {
-  const [value, setValue] = useState<number>(0);
+  const { navBar } = store.getState();
+  const [value, setValue] = useState<number>(navBar.value);
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [activeTabIndex, setActiveTabIndex] = useState<number>(0);
   const open = Boolean(anchorEl);
@@ -17,6 +20,7 @@ const NavBar = () => {
 
   const handleChange = (_: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
+    store.dispatch(setNavState({ value: newValue }));
   };
 
   const handleClick = (
