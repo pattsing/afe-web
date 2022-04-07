@@ -1,5 +1,5 @@
 import Container from "@mui/material/Container";
-import NavBar from "../Components/NavBar";
+import NavBar from "../Components/NavBar/NavBar";
 
 const About = () => {
   return (

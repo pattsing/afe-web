@@ -1,0 +1,27 @@
+.footer {
+    display: flex;
+    flex: 1;
+    padding: 2rem 0;
+    border-top: 1px solid #eaeaea;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    margin: auto;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .logo {
+    height: 40px;
+    width: 30px;
+    margin-left: 0.1rem
+  }
