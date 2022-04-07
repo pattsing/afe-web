@@ -1,15 +1,36 @@
 import logo from "../../Assets/afelogo-black-nobg.png"
 import "./Footer.css"
+import { useState, useEffect } from "react"
 
-const Footer = () => {
-    return (
-        <footer className="footer">
-        Copyright ©2022 Art for environment NFT. All Right Reserved
-        <span className="logo">
-          <img src={logo} alt="afe-logo" width={20} height={20} />
-        </span>
-      </footer>
-    )
+function Footer() {
+  const [width, setWindowWidth] = useState(0)
+
+  useEffect(() => { 
+
+    updateDimensions();
+
+    window.addEventListener('resize', updateDimensions);
+    return () => 
+      window.removeEventListener('resize',updateDimensions);
+   }, [])
+
+const updateDimensions = () => {
+  const width = window.innerWidth
+  setWindowWidth(width)
+}
+
+const logoImage = () => {
+  if (width > 425) {
+    return <img src={logo} alt="afe-logo" className="logo" />
+  }
+}
+
+  return (
+    <footer className="footer">
+    Copyright ©2022 Art for environment NFT. All Right Reserved
+      {logoImage()}
+  </footer>
+)
 }
 
 export default Footer;
