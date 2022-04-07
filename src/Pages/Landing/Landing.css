@@ -1,0 +1,33 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 16px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px;
+    width: 80%;
+    justify-content: center;
+}
+
+.group-card {
+    display: flex;
+}
+
+.image-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    width: 20%;
+}
+
+.link-button {
+    border-radius: 50em;
+    background-color: #4ecca3;
+    color: rgb(255, 255, 255);
+    padding: 1em 2em;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color .2s;
+}
+
+.link-button:hover {
+    background-color: #76d7b8;
+}

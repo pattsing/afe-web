@@ -86,7 +86,7 @@ const NavBar = () => {
               aria-expanded={open ? "true" : undefined}
               aria-haspopup="true"
               style={{
-                fontSize: "18px"
+                fontSize: "16px"
               }}
             />
           );

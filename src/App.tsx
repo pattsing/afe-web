@@ -3,7 +3,7 @@ import "./App.css";
 import About from "./Pages/About";
 import BuyNFT from "./Pages/BuyNFT";
 import Faq from "./Pages/Faq";
-import Landing from "./Pages/Landing";
+import Landing from "./Pages/Landing/Landing";
 
 function App() {
   return (
