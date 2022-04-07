@@ -6,9 +6,11 @@ import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import navBarData from "../Data/NavBarData.json";
-import { setNavState } from "../ReduxStore/NavBarSlice";
-import store from "../ReduxStore/store";
+import navBarData from "../../Data/NavBarData.json";
+import { setNavState } from "../../ReduxStore/NavBarSlice";
+import store from "../../ReduxStore/store";
+import "./NavBar.css"
+import navlogo from "../../Assets/afelogo-left-nobg.svg"
 
 const NavBar = () => {
   const { navBar } = store.getState();
@@ -62,13 +64,15 @@ const NavBar = () => {
     <Box
       sx={{
         width: "100%",
-        bgcolor: "background.paper",
+        bgcolor: "#4ecca3",
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
       }}
     >
-      <div>LOGO</div>
+      <div>
+        <img src={navlogo} className="menu-logo"/>
+      </div>
       <Tabs value={value} onChange={handleChange}>
         {navBarData.map((tab, index) => {
           return (
@@ -81,6 +85,9 @@ const NavBar = () => {
               aria-controls={open ? `fade-menu-${index}` : undefined}
               aria-expanded={open ? "true" : undefined}
               aria-haspopup="true"
+              style={{
+                fontSize: "18px"
+              }}
             />
           );
         })}
