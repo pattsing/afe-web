@@ -1,9 +1,15 @@
 import { SyntheticEvent, useState } from "react";
-import Container from "@mui/material/Container";
-import NavBar from "../../Components/NavBar";
+import NavBar from "../../Components/NavBar/NavBar";
 import translation from "../../Locals/en.json";
 import style from "./Faq.module.css";
-import { Accordion, AccordionSummary, Typography } from "@mui/material";
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Typography,
+} from "@mui/material";
+import faqData from "../../Data/FAQData.json";
+import ExpandMore from "@mui/icons-material/ExpandMore";
 
 const Faq = () => {
   const trans = translation.FaqPage;
@@ -15,7 +21,7 @@ const Faq = () => {
     };
 
   return (
-    <div style={{ backgroundColor: "gray" }}>
+    <div>
       <NavBar />
       <Typography
         variant="h1"
@@ -26,11 +32,25 @@ const Faq = () => {
       >
         {trans.title}
       </Typography>
-      {/* <div>
-        <Accordion>
-          <AccordionSummary>Faq 1</AccordionSummary>
-        </Accordion>
-      </div> */}
+      <div style={{ padding: "0vw 5vw" }}>
+        {faqData.map((faq, index) => {
+          return (
+            <Accordion
+              expanded={expanded === `faq-${index}`}
+              onChange={handleChange(`faq-${index}`)}
+            >
+              <AccordionSummary
+                expandIcon={<ExpandMore />}
+                aria-controls="panel1bh-content"
+                id={`faq-question-${index}`}
+              >
+                {faq.question}
+              </AccordionSummary>
+              <AccordionDetails>{faq.answer}</AccordionDetails>
+            </Accordion>
+          );
+        })}
+      </div>
     </div>
   );
 };
