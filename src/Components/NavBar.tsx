@@ -59,34 +59,36 @@ const NavBar = () => {
   };
 
   return (
-    <Box
-      sx={{
-        width: "100%",
-        bgcolor: "background.paper",
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "space-between",
-      }}
-    >
-      <div>LOGO</div>
-      <Tabs value={value} onChange={handleChange}>
-        {navBarData.map((tab, index) => {
-          return (
-            <Tab
-              label={tab.tabName}
-              id={`tab-${index}`}
-              onClick={(event: React.MouseEvent<HTMLElement>) => {
-                handleClick(event, index, tab.tabRoute);
-              }}
-              aria-controls={open ? `fade-menu-${index}` : undefined}
-              aria-expanded={open ? "true" : undefined}
-              aria-haspopup="true"
-            />
-          );
-        })}
-      </Tabs>
-      {getMenuList(activeTabIndex)}
-    </Box>
+    <div style={{padding: "0vw 2vw"}}>
+      <Box
+        sx={{
+          width: "100%",
+          bgcolor: "background.paper",
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-between",
+        }}
+      >
+        <div>LOGO</div>
+        <Tabs value={value} onChange={handleChange}>
+          {navBarData.map((tab, index) => {
+            return (
+              <Tab
+                label={tab.tabName}
+                id={`tab-${index}`}
+                onClick={(event: React.MouseEvent<HTMLElement>) => {
+                  handleClick(event, index, tab.tabRoute);
+                }}
+                aria-controls={open ? `fade-menu-${index}` : undefined}
+                aria-expanded={open ? "true" : undefined}
+                aria-haspopup="true"
+              />
+            );
+          })}
+        </Tabs>
+        {getMenuList(activeTabIndex)}
+      </Box>
+    </div>
   );
 };
 
