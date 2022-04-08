@@ -2,16 +2,32 @@ import Container from "@mui/material/Container";
 import NavBar from "../../Components/NavBar/NavBar";
 import "./Landing.css";
 import tempImage from "../../Assets/temp_img.jpg";
+import wwfLogo from "../../Assets/wwflogo.jpeg"
+import panadaImg from "../../Assets/panda.png"
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import MockImageData from "../../Data/MockImageData.json";
 import "swiper/css";
 import "swiper/css/pagination";
-import ImageListItem from "@mui/material/ImageListItem";
+import Slider from "react-slick";
 
 const Landing = () => {
+  const settings = {
+    className: "center",
+    dots: true,
+    arrows: false,
+    centerMode: true,
+    infinite: true,
+    centerPadding: "60px",
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 500
+  };
+
   return (
-    <Container>
+    <div>
       <NavBar />
       <div
         style={{
@@ -19,15 +35,53 @@ const Landing = () => {
           textAlign: "center",
         }}
       >
-        <p
+        {/* <p
           style={{
             fontFamily: "Helvetica",
             fontSize: "2em",
           }}
         >
           ART FOR ENVIRONMENT
-        </p>
+        </p> */}
+        <div style={{
+          margin: "20px"
+        }}>
+        <Slider {...settings}>
+
+{MockImageData.map((item) => (
+        // <ImageListItem key={item.img}>
+          <img
+            src={`${item.img}?w=300&h=300&fit=crop&auto=format`}
+            srcSet={`${item.img}?w=300&h=300&fit=crop&auto=format&dpr=2 2x`}
+            alt={item.title}
+            loading="lazy"
+          />
+        // </ImageListItem>
+    ))}
+</Slider>
+        </div>
+        
         <div className="group-card">
+        <div style={{
+          width: "30%",
+          padding: "1em",
+          position: "relative",
+          height: "200px"
+        }}>
+<img src={panadaImg} className="first-paragraph-image-left"></img>
+<img src={wwfLogo} className="first-paragraph-image-right"></img>
+
+        </div>
+          <div className="first-paragraph">
+            Mother Earth needs your help. With the fallout from climate change
+            and mass extinctions looming, she is slipping away right under our
+            noses. Art for Environment – NFT (AFE-NFT) aims to slow her decay by
+            becoming a vehicle for aiding her recovery.
+          </div>
+          
+        </div>
+
+        {/* <div className="group-card">
           <div className="card">
             Mother Earth needs your help. With the fallout from climate change
             and mass extinctions looming, she is slipping away right under our
@@ -114,9 +168,9 @@ const Landing = () => {
             {" "}
             ART FOR ENVIRONMENT NFT ON OPENSEA
           </a>
-        </div>
+        </div> */}
       </div>
-    </Container>
+    </div>
   );
 };
 

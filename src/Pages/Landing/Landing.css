@@ -18,6 +18,30 @@
     justify-content: center;
 }
 
+.first-paragraph {
+    text-align: left;
+    color: white;
+    padding: 1em;
+    width: 70%;
+    font-size: 24px;
+}
+
+.first-paragraph-image-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60%;
+    height: 60%;
+}
+
+.first-paragraph-image-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 60%;
+    height: 60%;
+}
+
 .group-card {
     display: flex;
 }
