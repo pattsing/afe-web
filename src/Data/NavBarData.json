@@ -5,6 +5,7 @@
   },
   {
     "tabName": "Art Works",
+    "tabRoute": "/artworks",
     "tabMenu": ["Vasan1", "Vasan2"]
   },
   {

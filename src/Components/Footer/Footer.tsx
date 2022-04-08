@@ -1,4 +1,4 @@
-import logo from "../../Assets/afelogo-black-nobg.png"
+import logo from "../../Assets/afelogo-white-nobg.png"
 import "./Footer.css"
 import { useState, useEffect } from "react"
 
