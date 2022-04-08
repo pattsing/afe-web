@@ -19,9 +19,10 @@
 }
 
 .first-paragraph {
+    margin-left: 8%;
     text-align: left;
     color: white;
-    padding: 1em;
+    padding: 0em 1em;
     width: 70%;
     font-size: 24px;
 }
@@ -42,8 +43,29 @@
     height: 60%;
 }
 
+.second-paragraph {
+    margin-right: 8%;
+    text-align: left;
+    color: white;
+    padding: 0em 1em;
+    width: 70%;
+    font-size: 24px;
+}
+
+.second-paragraph-image-top {
+    width: 50%;
+    height: 50%;
+}
+
+.second-paragraph-image-bottom {
+    width: 50%;
+    height: 50%;
+}
+
 .group-card {
     display: flex;
+    margin: 20px 16px;
+    padding: 24px 30px;
 }
 
 .image-card {
@@ -96,4 +118,3 @@
     height: 100%;
     object-fit: fill;
   }
-  

@@ -2,8 +2,9 @@ import Container from "@mui/material/Container";
 import NavBar from "../../Components/NavBar/NavBar";
 import "./Landing.css";
 import tempImage from "../../Assets/temp_img.jpg";
-import wwfLogo from "../../Assets/wwflogo.jpeg"
-import panadaImg from "../../Assets/panda.png"
+import wwfLogo from "../../Assets/wwflogo.jpeg";
+import panadaImg from "../../Assets/panda.png";
+import canLogo from "../../Assets/canlogo.jpeg"
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import MockImageData from "../../Data/MockImageData.json";
@@ -22,8 +23,8 @@ const Landing = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
-    speed: 500
+    autoplaySpeed: 3000,
+    speed: 500,
   };
 
   return (
@@ -43,42 +44,80 @@ const Landing = () => {
         >
           ART FOR ENVIRONMENT
         </p> */}
-        <div style={{
-          margin: "20px"
-        }}>
-        <Slider {...settings}>
-
-{MockImageData.map((item) => (
-        // <ImageListItem key={item.img}>
-          <img
-            src={`${item.img}?w=300&h=300&fit=crop&auto=format`}
-            srcSet={`${item.img}?w=300&h=300&fit=crop&auto=format&dpr=2 2x`}
-            alt={item.title}
-            loading="lazy"
-          />
-        // </ImageListItem>
-    ))}
-</Slider>
+        <div
+          style={{
+            margin: "20px",
+          }}
+        >
+          <Slider {...settings}>
+            {MockImageData.map((item) => (
+              // <ImageListItem key={item.img}>
+              <div>
+<img
+                src={`${item.img}?w=300&h=300&fit=crop&auto=format`}
+                srcSet={`${item.img}?w=300&h=300&fit=crop&auto=format&dpr=2 2x`}
+                alt={item.title}
+                loading="lazy"
+                style={{
+                  width: "100%",
+                  height: "100%"
+                }}
+              />
+              </div>
+              
+              // </ImageListItem>
+            ))}
+          </Slider>
         </div>
-        
+
         <div className="group-card">
-        <div style={{
-          width: "30%",
-          padding: "1em",
-          position: "relative",
-          height: "200px"
-        }}>
-<img src={panadaImg} className="first-paragraph-image-left"></img>
-<img src={wwfLogo} className="first-paragraph-image-right"></img>
-
-        </div>
+          <div
+            style={{
+              width: "30%",
+              padding: "1em",
+              position: "relative",
+              height: "200px",
+            }}
+          >
+            <img src={panadaImg} className="first-paragraph-image-left"></img>
+            <img src={wwfLogo} className="first-paragraph-image-right"></img>
+          </div>
           <div className="first-paragraph">
-            Mother Earth needs your help. With the fallout from climate change
+            <h1 style={{
+              textAlign: "right"
+            }}>ART FOR ENVIRONMENT</h1>
+            <p style={{ textAlign: "justify"}}>Mother Earth needs your help. With the fallout from climate change
             and mass extinctions looming, she is slipping away right under our
             noses. Art for Environment – NFT (AFE-NFT) aims to slow her decay by
-            becoming a vehicle for aiding her recovery.
+            becoming a vehicle for aiding her recovery.</p>
           </div>
+        </div>
+
+        <div className="group-card">
           
+          <div className="second-paragraph">
+            <h1>WHAT IS AFE-NFT?</h1>
+            <p style={{ textAlign: "justify"}}>AFE-NFT is online collection of high-quality artworks that
+            poignantly address current and pressing environmental issues. These
+            artworks by renowned artists</p>
+            
+            <p> Minted and stored as ERC-721 tokens, Each artworks contains 3 Token of the same artwork, priced at USD 2,700 per piece. Twenty percent
+            of all our proceeds will be donated to several environmental
+            charities, including the World Wildlife Fund (WWF) and Climate
+            Action Network (CAN).</p>
+            <p>The remaining balance will be equally divided
+            between the artist and the project.</p>
+          </div>
+
+          <div
+            style={{
+              width: "30%",
+              padding: "1em"
+            }}
+          >
+            <img src={canLogo} className="second-paragraph-image-top"></img>
+            <img src={wwfLogo} className="second-paragraph-image-bottom"></img>
+          </div>
         </div>
 
         {/* <div className="group-card">
