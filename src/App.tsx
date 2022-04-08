@@ -2,8 +2,8 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import About from "./Pages/About";
 import BuyNFT from "./Pages/BuyNFT";
+import Landing from "./Pages/Landing/Landing";
 import Faq from "./Pages/Faq/Faq";
-import Landing from "./Pages/Landing";
 
 function App() {
   return (
