@@ -1,0 +1,54 @@
+[
+    {
+        "question": "What is a NFT?",
+        "answer": "A non-fungible token (NFT) is a non-interchangeable unit of data stored on a blockchain, a form of digital ledger, which can be bought, sold and traded online. Transactions involving NFTs are frequently executed with cryptocurrency, and they are generally encoded with the same underlying software as many cryptos. Types of NFT data units may be associated with digital files, representing real-world objects like art, music, in-game items and videos. They are bought and sold online, frequently with cryptocurrency, and they are generally encoded with the same underlying software as many cryptos."
+    },
+    {
+        "question": "What is blockchain?",
+        "answer": "A blockchain is essentially a digital ledger of transactions that is duplicated and distributed across the entire network of computer systems on the blockchain. Each block in the chain contains a number of transactions, and every time a new transaction occurs on the blockchain, a record of that transaction is added to every participant's ledger. Such a system records information in a way that makes it difficult or near impossible to change, hack, or cheat the system."
+    },
+    {
+        "question": "What is a cryptocurrency?",
+        "answer": "A cryptocurrency is an encrypted data string that denotes a unit of currency. It is monitored and organized by a peer-to-peer network called a blockchain, which also serves as a secure ledger of transactions. Major cryptocurrencies include Ether, Bitcoin, Litecoin, and Monero among others."
+    },
+    {
+        "question": "What is Ethereum and Ether?",
+        "answer": "Launched in July 2015, Ethereum is a decentralized, open-source blockchain with smart contract functionality. Ether (ETH) is the native cryptocurrency of the platform and often used in NFT-related transactions."
+    },
+    {
+        "question": "What is a digital or cryptocurrency wallet?",
+        "answer": "A digital wallet (or e-wallet) is a software-based system that securely stores users' payment information and passwords for numerous payment methods and websites. For this reason, digital wallets act as financial accounts that permit users to store funds, make transactions, and track payment histories by computer. Such characteristics further allow digital wallets to become the main interface for using cryptocurrencies, like Ether and Bitcoin."
+    },
+    {
+        "question": "What is a smart contract?",
+        "answer": "A smart contract is a self-executing contract with the terms of the agreement between buyer and seller being directly written into lines of code. The agreements and code contained therein exist across a distributed and decentralized blockchain network. The code controls the execution, and transactions are trackable and irreversible."
+    },
+    {
+        "question": "Is Ether secure?",
+        "answer": "Cryptocurrencies, including Ether and Bitcoin, are generally secure. The main threat to regular clients is phishing, i.e. you are tricked by email or through other means to give away your access code(s) or click on a link that is not secure. It may be safest to write down your password details using pen and paper, after which they should be stored in a secure place."
+    },
+    {
+        "question": "Is Ether stable?",
+        "answer": "No, the exchange rate between Ether and USD, as well as other currencies, fluctuates. We have priced our NFTs in USD. However, when you buy the NFT, you will need to pay for it in Ether. We will ensure that the USD price is as close to its Ether equivalent as possible."
+    },
+    {
+        "question": "How can I convert cash into Ether?",
+        "answer": "Step 1: Download and register on a cryptocurrency exchange app, the most accessible being Binance, Zipmex, Bitkub and Coinbase.\n Step 2: Connect your bank account to the cryptocurrency exchange app.\n Step 3: Deposit cash from your linked bank account into your registered account on the cryptocurrency exchange app.\n  Step 4: Place an order for Ether using your deposited cash and store your Ether in your digital wallet, such as MetaMask.\n Please refer to the 'How to Buy NFTs' section on this website for further details."
+    },
+    {
+        "question": "How can I convert Ether into cash?",
+        "answer": "Step 1: Transfer your Ether from your digital wallet, e.g. MetaMask, to your cryptocurrency exchange app, like Binance, Zipmex, Bitkub or Coinbase.\n Step 2: Connect your bank account to the cryptocurrency exchange app, if not already linked.\n Step 3: Sell your Ether against a preferred currency.\n Step 4: Transfer your money from the cryptocurrency exchange app to your bank account. Please note that doing so will be subject to a transaction fee, as set by the app developers.\n Please refer to the 'How to Buy NFTs' section on this website for further details."
+    },
+    {
+        "question": "Can I resell my NFT?",
+        "answer": "Yes, you can resell it at any time and at any price you deem appropriate. Please note that the smart contract, written into each NFT, will automatically transfer 5% of your resale proceeds to the artist and the project. This means that you, the seller, will retain 95% of the sticker price on your NFT."
+    },
+    {
+        "question": "Will I own the copyright on my NFT?",
+        "answer": "Unless your NFT's smart contract says so, you will not own the copyright on your NFT. Buying an NFT does not in itself transfer copyright in the underlying work to the new owner of the NFT. The copyright, including the rights to reproduce, adapt or communicate such work to the public, would remain with the actual author or creator of the particular work. This means NFT owners would only maintain a normal right of possession to the specific copy of the NFT, such as the right to be a property owner and the right to reap the benefits of that property, e.g. through resale or trade."
+    },
+    {
+        "question": "Does Ether have a high carbon footprint?",
+        "answer": "Most cryptocurrencies have a high carbon footprint, due to the extensive use of electricity while being However, the annual global carbon footprint for Ether is less than half that of Bitcoin. In fact, Ether employs a unique and modified approach to mining, which appears to utilize less power. When new cryptocurrencies become widely available, we will take the necessary steps to list our prices in a cryptocurrency that possesses a lower carbon footprint."
+    }
+]
