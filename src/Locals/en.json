@@ -1,5 +1,8 @@
 {
     "FaqPage": {
         "title": "FAQ"
+    },
+    "AboutPage": {
+        "title": "ABOUT US"
     }
 }

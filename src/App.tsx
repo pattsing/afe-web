@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import About from "./Pages/About";
+import About from "./Pages/About/About";
 import BuyNFT from "./Pages/BuyNFT";
 import Landing from "./Pages/Landing/Landing";
 import Artworks from "./Pages/Artworks/Artworks";

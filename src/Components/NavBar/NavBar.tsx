@@ -9,8 +9,9 @@ import { useNavigate } from "react-router-dom";
 import navBarData from "../../Data/NavBarData.json";
 import { setNavState } from "../../ReduxStore/NavBarSlice";
 import store from "../../ReduxStore/store";
-import "./NavBar.css"
-import navlogo from "../../Assets/afelogo-left-nobg.svg"
+import "./NavBar.css";
+import navlogo from "../../Assets/afelogo-left-nobg.svg";
+import { style } from "@mui/system";
 
 const NavBar = () => {
   const { navBar } = store.getState();
@@ -63,35 +64,39 @@ const NavBar = () => {
   return (
     <Box
       sx={{
-        width: "100%",
-        bgcolor: "#4ecca3",
+        width: "95%",
         display: "flex",
         flexDirection: "row",
-        justifyContent: "space-between",
       }}
+      className={"menu-bar"}
     >
-      <div>
-        <img src={navlogo} className="menu-logo"/>
+      <div style={{ width: "20%" }}>
+        <img src={navlogo} className="menu-logo" />
       </div>
-      <Tabs value={value} onChange={handleChange}>
-        {navBarData.map((tab, index) => {
-          return (
-            <Tab
-              label={tab.tabName}
-              id={`tab-${index}`}
-              onClick={(event: React.MouseEvent<HTMLElement>) => {
-                handleClick(event, index, tab.tabRoute);
-              }}
-              aria-controls={open ? `fade-menu-${index}` : undefined}
-              aria-expanded={open ? "true" : undefined}
-              aria-haspopup="true"
-              style={{
-                fontSize: "16px"
-              }}
-            />
-          );
-        })}
-      </Tabs>
+      <div
+        style={{ width: "80%", display: "flex", flexDirection: "row-reverse" }}
+      >
+        <Tabs value={value} onChange={handleChange}>
+          {navBarData.map((tab, index) => {
+            return (
+              <Tab
+                label={tab.tabName}
+                id={`tab-${index}`}
+                onClick={(event: React.MouseEvent<HTMLElement>) => {
+                  handleClick(event, index, tab.tabRoute);
+                }}
+                aria-controls={open ? `fade-menu-${index}` : undefined}
+                aria-expanded={open ? "true" : undefined}
+                aria-haspopup="true"
+                style={{
+                  fontSize: "1vw",
+                  color: "#ffffff",
+                }}
+              />
+            );
+          })}
+        </Tabs>
+      </div>
       {getMenuList(activeTabIndex)}
     </Box>
   );
