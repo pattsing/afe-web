@@ -2,6 +2,7 @@ import Typography from "@mui/material/Typography";
 import NavBar from "../../Components/NavBar/NavBar";
 import translation from "../../Locals/en.json";
 import style from "./About.module.css";
+import whiteLogo from "../../Assets/afelogo-left-white-nobg.png";
 
 const About = () => {
   const trans = translation.AboutPage;
@@ -23,12 +24,19 @@ const About = () => {
           style={{
             width: "30%",
             height: "10vw",
-            backgroundColor: "white",
             margin: "auto",
             marginTop: "10vw",
           }}
         >
-          LOGO
+          <img src={whiteLogo} style={{ width: "100%", height: "100%" }}></img>
+        </div>
+        <div
+          style={{
+            width: "60%",
+            height: "10vw",
+            margin: "auto",
+          }}
+        >
         </div>
         <div
           style={{
@@ -40,7 +48,11 @@ const About = () => {
         >
           <div
             style={{ width: "22%", height: "25vw", backgroundColor: "white" }}
-          ></div>
+          >
+            <Typography variant="h4" align="left" component="div" gutterBottom>
+              Jorn
+            </Typography>
+          </div>
           <div
             style={{ width: "22%", height: "25vw", backgroundColor: "white" }}
           ></div>
