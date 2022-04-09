@@ -30,10 +30,23 @@ const About = () => {
         >
           LOGO
         </div>
-        <div style={{margin: "auto", marginTop:"10vw"}}>
-          <div style={{width:"25%", height:"25vw", backgroundColor: "white"}}></div>
-          <div style={{width:"25%", height:"25vw", backgroundColor: "white"}}></div>
-          <div style={{width:"25%", height:"25vw", backgroundColor: "white"}}></div>
+        <div
+          style={{
+            margin: "auto",
+            marginTop: "10vw",
+            display: "flex",
+            justifyContent: "space-around",
+          }}
+        >
+          <div
+            style={{ width: "22%", height: "25vw", backgroundColor: "white" }}
+          ></div>
+          <div
+            style={{ width: "22%", height: "25vw", backgroundColor: "white" }}
+          ></div>
+          <div
+            style={{ width: "22%", height: "25vw", backgroundColor: "white" }}
+          ></div>
         </div>
       </div>
     </div>
