@@ -1,9 +1,7 @@
 import Container from "@mui/material/Container";
 import NavBar from "../../Components/NavBar/NavBar";
 import "./Landing.css";
-import tempImage from "../../Assets/temp_img.jpg";
 import wwfLogo from "../../Assets/wwflogo.jpeg";
-import panadaImg from "../../Assets/panda.png";
 import canLogo from "../../Assets/canlogo.jpeg"
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
@@ -11,6 +9,7 @@ import MockImageData from "../../Data/MockImageData.json";
 import "swiper/css";
 import "swiper/css/pagination";
 import Slider from "react-slick";
+import fire from "./fire.mp4";
 
 const Landing = () => {
   const settings = {
@@ -36,14 +35,6 @@ const Landing = () => {
           textAlign: "center",
         }}
       >
-        {/* <p
-          style={{
-            fontFamily: "Helvetica",
-            fontSize: "2em",
-          }}
-        >
-          ART FOR ENVIRONMENT
-        </p> */}
         <div
           style={{
             margin: "20px",
@@ -51,7 +42,6 @@ const Landing = () => {
         >
           <Slider {...settings}>
             {MockImageData.map((item) => (
-              // <ImageListItem key={item.img}>
               <div>
 <img
                 src={`${item.img}?w=300&h=300&fit=crop&auto=format`}
@@ -64,8 +54,6 @@ const Landing = () => {
                 }}
               />
               </div>
-              
-              // </ImageListItem>
             ))}
           </Slider>
         </div>
@@ -73,14 +61,15 @@ const Landing = () => {
         <div className="group-card">
           <div
             style={{
-              width: "30%",
-              padding: "1em",
-              position: "relative",
-              height: "200px",
+              width: "50%",
+              padding: "1em"
             }}
           >
-            <img src={panadaImg} className="first-paragraph-image-left"></img>
-            <img src={wwfLogo} className="first-paragraph-image-right"></img>
+            <video autoPlay muted loop style={{
+              width: "100%",
+              height: "100%"
+            }}><source src={fire} type="video/mp4"></source></video>
+
           </div>
           <div className="first-paragraph">
             <h1 style={{
@@ -101,22 +90,18 @@ const Landing = () => {
             poignantly address current and pressing environmental issues. These
             artworks by renowned artists</p>
             
-            <p> Minted and stored as ERC-721 tokens, Each artworks contains 3 Token of the same artwork, priced at USD 2,700 per piece. Twenty percent
-            of all our proceeds will be donated to several environmental
-            charities, including the World Wildlife Fund (WWF) and Climate
+            <p> Minted and stored as ERC-721 tokens, Each artworks contains 3 Token of the same artwork, priced at USD 2,700 per piece. <span style={{fontWeight: "bold"}}>20%
+            of all our proceeds </span>
+            will be donated to several environmental charities, including the World Wildlife Fund (WWF) and Climate
             Action Network (CAN).</p>
             <p>The remaining balance will be equally divided
             between the artist and the project.</p>
           </div>
 
-          <div
-            style={{
-              width: "30%",
-              padding: "1em"
-            }}
+          <div className="second-paragraph-image-group"
           >
-            <img src={canLogo} className="second-paragraph-image-top"></img>
-            <img src={wwfLogo} className="second-paragraph-image-bottom"></img>
+            <img src={canLogo} className="second-paragraph-image"></img>
+            <img src={wwfLogo} className="second-paragraph-image"></img>
           </div>
         </div>
 
