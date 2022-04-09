@@ -6,12 +6,22 @@ import Container from "@mui/material/Container";
 import NavBar from "../../Components/NavBar/NavBar";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 import MockImageData from "../../Data/MockImageData.json";
+import { Typography } from "@mui/material";
+import "./Artworks.css"
 
 export default function Artworks() {
   return (
     <div>
       <NavBar />
-      {/* <Box sx={{ width: 500, height: 450, overflowY: 'scroll' }}> */}
+      <Typography
+        variant="h1"
+        align="center"
+        component="div"
+        gutterBottom
+        className="header-text"
+      >
+        ARTWORKS
+      </Typography>
       <ImageList variant="masonry" cols={3} gap={8}>
         {MockImageData.map((item) => (
           <ImageListItem key={item.img}>

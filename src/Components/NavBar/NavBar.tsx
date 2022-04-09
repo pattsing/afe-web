@@ -10,7 +10,7 @@ import navBarData from "../../Data/NavBarData.json";
 import { setNavState } from "../../ReduxStore/NavBarSlice";
 import store from "../../ReduxStore/store";
 import "./NavBar.css";
-import navlogo from "../../Assets/afelogo-left-nobg.svg";
+import navlogo from "../../Assets/afelogo-left-white-nobg.png";
 import { style } from "@mui/system";
 
 const NavBar = () => {

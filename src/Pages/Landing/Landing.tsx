@@ -9,7 +9,7 @@ import MockImageData from "../../Data/MockImageData.json";
 import "swiper/css";
 import "swiper/css/pagination";
 import Slider from "react-slick";
-import fire from "./fire.mp4";
+import fire from "../../Assets/fire.mp4";
 
 const Landing = () => {
   const settings = {
@@ -101,6 +101,9 @@ const Landing = () => {
             Action Network (CAN).</p>
             <p>The remaining balance will be equally divided
             between the artist and the project.</p>
+            <p>SMART CONTRACT ADDRESS: <a href="https://etherscan.io/" style={{
+              color: "#4ecca3"
+            }}>0x0e5c6b92196a5C7C0CB913e955335a407F3b50fA</a></p>
           </div>
 
           <div className="second-paragraph-image-group"
