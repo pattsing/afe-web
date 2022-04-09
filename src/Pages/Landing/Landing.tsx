@@ -43,16 +43,16 @@ const Landing = () => {
           <Slider {...settings}>
             {MockImageData.map((item) => (
               <div>
-<img
-                src={`${item.img}?w=300&h=300&fit=crop&auto=format`}
-                srcSet={`${item.img}?w=300&h=300&fit=crop&auto=format&dpr=2 2x`}
-                alt={item.title}
-                loading="lazy"
-                style={{
-                  width: "100%",
-                  height: "100%"
-                }}
-              />
+                <img
+                  src={`${item.img}?w=300&h=300&fit=crop&auto=format`}
+                  srcSet={`${item.img}?w=300&h=300&fit=crop&auto=format&dpr=2 2x`}
+                  alt={item.title}
+                  loading="lazy"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                  }}
+                />
               </div>
             ))}
           </Slider>
@@ -72,18 +72,23 @@ const Landing = () => {
 
           </div>
           <div className="first-paragraph">
-            <h1 style={{
-              textAlign: "right"
-            }}>ART FOR ENVIRONMENT</h1>
-            <p style={{ textAlign: "justify"}}>Mother Earth needs your help. With the fallout from climate change
-            and mass extinctions looming, she is slipping away right under our
-            noses. Art for Environment – NFT (AFE-NFT) aims to slow her decay by
-            becoming a vehicle for aiding her recovery.</p>
+            <h1
+              style={{
+                textAlign: "right",
+              }}
+            >
+              ART FOR ENVIRONMENT
+            </h1>
+            <p style={{ textAlign: "justify" }}>
+              Mother Earth needs your help. With the fallout from climate change
+              and mass extinctions looming, she is slipping away right under our
+              noses. Art for Environment – NFT (AFE-NFT) aims to slow her decay
+              by becoming a vehicle for aiding her recovery.
+            </p>
           </div>
         </div>
 
         <div className="group-card">
-          
           <div className="second-paragraph">
             <h1>WHAT IS AFE-NFT?</h1>
             <p style={{ textAlign: "justify"}}>AFE-NFT is online collection of high-quality artworks that

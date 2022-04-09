@@ -3,10 +3,10 @@ import NavBar from "../Components/NavBar/NavBar";
 
 const BuyNFT = () => {
   return (
-    <Container style={{ backgroundColor: "gray" }}>
+    <div>
       <NavBar />
       <div>BuyNFT</div>
-    </Container>
+    </div>
   );
 };
 
