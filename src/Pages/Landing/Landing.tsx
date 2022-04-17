@@ -1,31 +1,14 @@
-import Container from "@mui/material/Container";
 import NavBar from "../../Components/NavBar/NavBar";
 import "./Landing.css";
 import wwfLogo from "../../Assets/wwflogo.jpeg";
-import canLogo from "../../Assets/canlogo.jpeg"
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+import canLogo from "../../Assets/canlogo.jpeg";
 import MockImageData from "../../Data/MockImageData.json";
 import "swiper/css";
 import "swiper/css/pagination";
-import Slider from "react-slick";
 import fire from "../../Assets/fire.mp4";
+import SlideShow from "../../Components/SlideShow/SlideShow";
 
 const Landing = () => {
-  const settings = {
-    className: "center",
-    dots: true,
-    arrows: false,
-    centerMode: true,
-    infinite: true,
-    centerPadding: "60px",
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    speed: 500,
-  };
-
   return (
     <div>
       <NavBar />
@@ -35,41 +18,26 @@ const Landing = () => {
           textAlign: "center",
         }}
       >
-        <div
-          style={{
-            margin: "20px",
-          }}
-        >
-          <Slider {...settings}>
-            {MockImageData.map((item) => (
-              <div>
-                <img
-                  src={`${item.img}?w=300&h=300&fit=crop&auto=format`}
-                  srcSet={`${item.img}?w=300&h=300&fit=crop&auto=format&dpr=2 2x`}
-                  alt={item.title}
-                  loading="lazy"
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                  }}
-                />
-              </div>
-            ))}
-          </Slider>
-        </div>
+        <SlideShow data={MockImageData}/>
 
         <div className="group-card">
           <div
             style={{
               width: "50%",
-              padding: "1em"
+              padding: "1em",
             }}
           >
-            <video autoPlay muted loop style={{
-              width: "100%",
-              height: "100%"
-            }}><source src={fire} type="video/mp4"></source></video>
-
+            <video
+              autoPlay
+              muted
+              loop
+              style={{
+                width: "100%",
+                height: "100%",
+              }}
+            >
+              <source src={fire} type="video/mp4"></source>
+            </video>
           </div>
           <div className="first-paragraph">
             <h1
@@ -91,25 +59,42 @@ const Landing = () => {
         <div className="group-card">
           <div className="second-paragraph">
             <h1>WHAT IS AFE-NFT?</h1>
-            <p style={{ textAlign: "justify"}}>AFE-NFT is online collection of high-quality artworks that
-            poignantly address current and pressing environmental issues. These
-            artworks by renowned artists</p>
-            
-            <p> Minted and stored as ERC-721 tokens, Each artworks contains 3 Token of the same artwork, priced at USD 2,700 per piece. <span style={{fontWeight: "bold"}}>20%
-            of all our proceeds </span>
-            will be donated to several environmental charities, including the World Wildlife Fund (WWF) and Climate
-            Action Network (CAN).</p>
-            <p>The remaining balance will be equally divided
-            between the artist and the project.</p>
-            <p>SMART CONTRACT ADDRESS: <a href="https://etherscan.io/" style={{
-              color: "#4ecca3"
-            }}>0x0e5c6b92196a5C7C0CB913e955335a407F3b50fA</a></p>
+            <p style={{ textAlign: "justify" }}>
+              AFE-NFT is online collection of high-quality artworks that
+              poignantly address current and pressing environmental issues.
+              These artworks by renowned artists
+            </p>
+
+            <p>
+              {" "}
+              Minted and stored as ERC-721 tokens, Each artworks contains 3
+              Token of the same artwork, priced at USD 2,700 per piece.{" "}
+              <span style={{ fontWeight: "bold" }}>
+                20% of all our proceeds{" "}
+              </span>
+              will be donated to several environmental charities, including the
+              World Wildlife Fund (WWF) and Climate Action Network (CAN).
+            </p>
+            <p>
+              The remaining balance will be equally divided between the artist
+              and the project.
+            </p>
+            <p>
+              SMART CONTRACT ADDRESS:{" "}
+              <a
+                href="https://etherscan.io/"
+                style={{
+                  color: "#4ecca3",
+                }}
+              >
+                0x0e5c6b92196a5C7C0CB913e955335a407F3b50fA
+              </a>
+            </p>
           </div>
 
-          <div className="second-paragraph-image-group"
-          >
-            <img src={canLogo} className="second-paragraph-image"></img>
-            <img src={wwfLogo} className="second-paragraph-image"></img>
+          <div className="second-paragraph-image-group">
+            <img src={canLogo} alt={"canlogo"} className="second-paragraph-image"></img>
+            <img src={wwfLogo} alt={"wwflogo"} className="second-paragraph-image"></img>
           </div>
         </div>
 

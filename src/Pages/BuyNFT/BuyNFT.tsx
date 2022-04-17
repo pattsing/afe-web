@@ -1,4 +1,3 @@
-import Container from "@mui/material/Container";
 import NavBar from "../../Components/NavBar/NavBar";
 import { Typography } from "@mui/material";
 import "./BuyNFT.css"
