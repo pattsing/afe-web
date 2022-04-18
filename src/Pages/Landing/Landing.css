@@ -1,3 +1,8 @@
+.header-text {
+  margin-top: 5vw !important;
+  color: #ffffff;
+}
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
@@ -139,4 +144,5 @@
 
 .slick-dots {
   bottom: -50px !important;
+  pointer-events: none;
 }

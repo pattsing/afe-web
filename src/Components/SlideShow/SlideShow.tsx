@@ -28,6 +28,8 @@ const SlideShow = (props: SlideShowProps) => {
     autoplaySpeed: 3000,
     speed: 500,
     dotClass: "slick-dots",
+    touchMove: false,
+    pauseOnHover: false,
     customPaging: (index: number) => {
       return (
         <div

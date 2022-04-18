@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import fire from "../../Assets/fire.mp4";
 import SlideShow from "../../Components/SlideShow/SlideShow";
+import { Typography } from "@mui/material";
 
 const Landing = () => {
   return (
@@ -18,6 +19,15 @@ const Landing = () => {
           textAlign: "center",
         }}
       >
+        <Typography
+        variant="h1"
+        align="center"
+        component="div"
+        gutterBottom
+        className="header-text"
+      >
+        ART FOR ENVIRONMENT
+      </Typography>
         <SlideShow data={MockImageData}/>
 
         <div className="group-card">
@@ -45,7 +55,7 @@ const Landing = () => {
                 textAlign: "right",
               }}
             >
-              ART FOR ENVIRONMENT
+              WORLD ARE CRYING!
             </h1>
             <p style={{ textAlign: "justify" }}>
               Mother Earth needs your help. With the fallout from climate change
