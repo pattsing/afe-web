@@ -1,8 +1,13 @@
 {
-    "FaqPage": {
-        "title": "FAQ"
-    },
-    "AboutPage": {
-        "title": "ABOUT US"
-    }
+  "LandingPage": {
+    "title": "HOME",
+    "bannerQuote": "ART FOR  ENVIRONMENT – NFT",
+    "bannerDesc": "(affiliated with THAVIBU Art Advisory)"
+  },
+  "FaqPage": {
+    "title": "FAQ"
+  },
+  "AboutPage": {
+    "title": "ABOUT US"
+  }
 }

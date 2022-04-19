@@ -1,0 +1,42 @@
+.nav-wrapper {
+  height: 3vw;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0vw 0vw 1.5vw 0vw #000000;
+  background: linear-gradient(
+    90deg,
+    rgba(253, 187, 45, 1) 0%,
+    rgb(255, 255, 255) 50%
+  );
+  font-family: "Hind", sans-serif;
+}
+
+.nav-content-wrapper {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon {
+  margin-top: 0.25vw;
+  height: 2.5vw;
+}
+
+.nav-space {
+  width: 30vw;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list > div {
+  /* background-color: #f78c8c; */
+  font-size: 1vw;
+  margin: 0vw 1vw;
+  padding-top: 0.5vw;
+}
