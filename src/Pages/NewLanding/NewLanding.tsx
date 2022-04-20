@@ -13,15 +13,20 @@ import fire from "../../Assets/fire.mp4";
 import logo_white from "../../Assets/only-a-logo-white-nobg.png";
 import logo_can from "../../Assets/canlogo.jpeg";
 import logo_wwf from "../../Assets/wwflogo.jpeg";
-// import mother_of_earth from "../../Assets/mother_of_earth.tiff";
-// import mother_of_rice from "../../Assets/mother_of_rice.tiff";
+import mother_of_earth from "../../Assets/mother_of_earth.png";
+import mother_of_rice from "../../Assets/mother_of_rice.png";
+import AFEButton from "../../Components/AFEButton/AFEButton";
 
 const NewLanding = () => {
   const trans = translation.LandingPage;
-  //   const mockImgList = [
-  //     new SlideShowImage(mother_of_earth, "mother_of_earth"),
-  //     new SlideShowImage(mother_of_rice, "mother_of_rice"),
-  //   ];
+  const mockImgList = [
+    new SlideShowImage(logo_can, "mother_of_earth"),
+    new SlideShowImage(logo_wwf, "mother_of_rice"),
+  ];
+
+  const eiei = () => {
+    console.log("click");
+  };
   return (
     <div>
       <NewNavBar></NewNavBar>
@@ -46,6 +51,13 @@ const NewLanding = () => {
               <div>
                 <div className="fire-title">{trans.worldTitle}</div>
                 <div className="fire-desc">{trans.worldDesc}</div>
+                <div className="fire-button-right">
+                  <AFEButton
+                    title={"MORE ENVIRONMENT THEME"}
+                    onclick={() => eiei}
+                    isBlack={false}
+                  />
+                </div>
               </div>
             </div>
           </Container>
@@ -61,6 +73,13 @@ const NewLanding = () => {
             <div className="nft-text">
               <div className="title">{trans.nftTitle}</div>
               <div className="desc">{trans.nftDesc}</div>
+              <div className="fire-button-left">
+                <AFEButton
+                  title={"GO TO OPENSEA COLLECTION"}
+                  onclick={() => eiei}
+                  isBlack={true}
+                />
+              </div>
             </div>
             <div className="nft-img">
               <Card className="card">
@@ -73,6 +92,24 @@ const NewLanding = () => {
           </div>
         </Container>
         {/* </div> */}
+      </div>
+      <div className="content-world">
+        <Container maxWidth="xl" className="fire-container">
+          <div className="fire-wrapper">
+            <img className="img-third-para" src={mother_of_earth}></img>
+            <div>
+              <div className="fire-title">{trans.sourceTitle}</div>
+              <div className="fire-desc">{trans.sourceDesc}</div>
+              <div className="fire-button-right">
+                <AFEButton
+                  title={"List of artworks"}
+                  onclick={() => eiei}
+                  isBlack={false}
+                />
+              </div>
+            </div>
+          </div>
+        </Container>
       </div>
     </div>
   );

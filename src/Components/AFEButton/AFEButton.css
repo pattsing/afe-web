@@ -1,0 +1,42 @@
+.afe-button-black {
+  padding: 0.5vw 1vw;
+  padding: 0.5vw;
+  color: black;
+  border-radius: 0.5vw;
+  border-style: solid;
+  border-width: 0.1vw;
+  border-color: black;
+  width: fit-content;
+  font-size: 1vw;
+}
+
+.afe-button-white {
+  padding: 0.5vw 1vw;
+  color: white;
+  border-radius: 0.5vw;
+  border-style: solid;
+  border-width: 0.1vw;
+  border-color: white;
+  width: fit-content;
+  font-size: 1vw;
+}
+
+.afe-button-black:hover {
+  color: white;
+  border-color: white;
+  background: linear-gradient(
+    90deg,
+    rgba(253, 187, 45, 1) 0%,
+    rgba(55, 92, 64, 1) 40%,
+    rgba(4, 44, 98, 1) 100%
+  );
+}
+
+.afe-button-white:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(253, 187, 45, 1) 0%,
+    rgba(55, 92, 64, 1) 40%,
+    rgba(4, 44, 98, 1) 100%
+  );
+}
