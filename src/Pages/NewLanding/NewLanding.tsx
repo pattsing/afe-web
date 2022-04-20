@@ -72,27 +72,21 @@ const NewLanding = () => {
             </div>
           </Container>
         </div>
-        <div className="content-slide">
-          <Container>{/* <SlideShow data={mockImgList} /> */}</Container>
-        </div>
-        {/* <div className="content-nft"> */}
         <Container className="content-nft">
           <div className="nft-wrapper">
             <div className="nft-text">
               <div className="title">{trans.nftTitle}</div>
               <div className="desc">{trans.nftDesc}</div>
               <div className="smartcontract">
-                
-                  SMART CONTRACT ADDRESS:{" "}
-                  <a
-                    href="https://etherscan.io/"
-                    style={{
-                      color: "#000000",
-                    }}
-                  >
-                    0x0e5c6b92196a5C7C0CB913e955335a407F3b50fA
-                  </a>
-
+                SMART CONTRACT ADDRESS:{" "}
+                <a
+                  href="https://etherscan.io/"
+                  style={{
+                    color: "#000000",
+                  }}
+                >
+                  0x0e5c6b92196a5C7C0CB913e955335a407F3b50fA
+                </a>
               </div>
 
               <div className="fire-button-left">

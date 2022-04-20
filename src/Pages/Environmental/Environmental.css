@@ -1,0 +1,41 @@
+.content-black {
+    height: 35vw;
+    background-color: rgba(0, 0, 0, 0.92);
+  }
+
+  .content-white {
+    height: 35vw;
+  }
+
+  .content-container {
+    height: 100%;
+  }
+
+  .black-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #ffffff;
+  }
+
+  .white-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #000000;
+  }
+
+  .video {
+    width: 60%;
+    border-radius: 2vw;
+  }
+
+  .title {
+      font-size: 1.5vw;
+  }

@@ -6,12 +6,14 @@ import Landing from "./Pages/Landing/Landing";
 import Artworks from "./Pages/Artworks/Artworks";
 import Faq from "./Pages/Faq/Faq";
 import NewLanding from "./Pages/NewLanding/NewLanding";
+import Environmental from "./Pages/Environmental/Environmental";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<NewLanding />} />
       <Route path="artworks" element={<Artworks />} />
+      <Route path="environmental" element={<Environmental />} />
       <Route path="buy-nft" element={<BuyNFT />} />
       <Route path="faq" element={<Faq />} />
       <Route path="about" element={<About />} />

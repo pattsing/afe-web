@@ -15,5 +15,13 @@
   },
   "AboutPage": {
     "title": "ABOUT US"
+  },
+  "Environmental": {
+    "title": "ENVIRONMENTAL THEMES",
+    "climateChange": "CLIMATE CHANGE",
+    "biodiversity": "BIODIVERSITY LOSS",
+    "plastic": "PLASTIC POLLUTION",
+    "population": "POPULATION GROWTH",
+    "consumer": "CONSUMER ECONOMY"
   }
 }
