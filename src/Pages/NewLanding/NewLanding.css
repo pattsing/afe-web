@@ -34,9 +34,83 @@
 }
 
 .banner-bg {
-  width: 20vw;
-  /* height: 5vw; */
+  width: 17.68vw;
   position: absolute;
-  top: 0;
+  top: 1vw;
   right: 15vw;
+}
+
+.content-world {
+  height: 35vw;
+  background-color: rgba(0, 0, 0, 0.92);
+}
+
+.content-nft {
+  height: 35vw;
+}
+
+.fire-container {
+  height: 100%;
+}
+
+.fire-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.fire-vdo {
+  width: 60%;
+  border-radius: 2vw;
+}
+
+.fire-title {
+  text-align: right;
+  font-size: 1.5vw;
+}
+
+.fire-desc {
+  text-align: justify;
+  font-size: 1vw;
+  padding-left: 4vw;
+}
+
+.nft-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nft-text {
+  width: 50%;
+}
+
+.nft-text .title {
+  font-size: 1.5vw;
+}
+
+.nft-text .desc {
+  font-size: 1vw;
+  text-align: justify;
+}
+
+.nft-img {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nft-img .card {
+  width: 40%;
+}
+
+.nft-img .card > img {
+  width: 100%;
+  height: 100%;
 }
