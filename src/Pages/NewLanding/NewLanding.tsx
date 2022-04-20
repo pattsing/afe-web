@@ -8,6 +8,7 @@ import translation from "../../Locals/en.json";
 import "./NewLanding.css";
 import "swiper/css";
 import "swiper/css/pagination";
+import Slider from "react-slick";
 
 import fire from "../../Assets/fire.mp4";
 import logo_white from "../../Assets/only-a-logo-white-nobg.png";
@@ -19,10 +20,19 @@ import AFEButton from "../../Components/AFEButton/AFEButton";
 
 const NewLanding = () => {
   const trans = translation.LandingPage;
-  const mockImgList = [
-    new SlideShowImage(logo_can, "mother_of_earth"),
-    new SlideShowImage(logo_wwf, "mother_of_rice"),
-  ];
+  const imageList = [mother_of_earth, mother_of_rice];
+
+  const settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    touchMove: false,
+  };
 
   const eiei = () => {
     console.log("click");
@@ -32,7 +42,7 @@ const NewLanding = () => {
       <NewNavBar></NewNavBar>
       <div className="page-wrapper">
         <div className="landing-banner">
-          <Container maxWidth="xl">
+          <Container>
             <div>
               <div>
                 <div className="banner-quote">{trans.bannerQuote}</div>
@@ -43,7 +53,7 @@ const NewLanding = () => {
           </Container>
         </div>
         <div className="content-world">
-          <Container maxWidth="xl" className="fire-container">
+          <Container className="fire-container">
             <div className="fire-wrapper">
               <video className="fire-vdo" autoPlay muted loop>
                 <source src={fire} type="video/mp4"></source>
@@ -63,16 +73,28 @@ const NewLanding = () => {
           </Container>
         </div>
         <div className="content-slide">
-          <Container maxWidth="xl">
-            {/* <SlideShow data={mockImgList} /> */}
-          </Container>
+          <Container>{/* <SlideShow data={mockImgList} /> */}</Container>
         </div>
         {/* <div className="content-nft"> */}
-        <Container className="content-nft" maxWidth="xl">
+        <Container className="content-nft">
           <div className="nft-wrapper">
             <div className="nft-text">
               <div className="title">{trans.nftTitle}</div>
               <div className="desc">{trans.nftDesc}</div>
+              <div className="desc">
+                <p>
+                  SMART CONTRACT ADDRESS:{" "}
+                  <a
+                    href="https://etherscan.io/"
+                    style={{
+                      color: "#000000",
+                    }}
+                  >
+                    0x0e5c6b92196a5C7C0CB913e955335a407F3b50fA
+                  </a>
+                </p>
+              </div>
+
               <div className="fire-button-left">
                 <AFEButton
                   title={"GO TO OPENSEA COLLECTION"}
@@ -94,9 +116,18 @@ const NewLanding = () => {
         {/* </div> */}
       </div>
       <div className="content-world">
-        <Container maxWidth="xl" className="fire-container">
+        <Container className="fire-container">
           <div className="fire-wrapper">
-            <img className="img-third-para" src={mother_of_earth}></img>
+            <div className="slide-div">
+              <Slider {...settings}>
+                {imageList.map((item, index) => (
+                  <div>
+                    <img className="img-third-para" src={item}></img>
+                  </div>
+                ))}
+              </Slider>
+            </div>
+
             <div>
               <div className="fire-title">{trans.sourceTitle}</div>
               <div className="fire-desc">{trans.sourceDesc}</div>
