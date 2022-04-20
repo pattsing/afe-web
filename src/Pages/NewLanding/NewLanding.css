@@ -108,6 +108,11 @@
   text-align: justify;
 }
 
+.smartcontract {
+  margin-top: 1vw;
+  font-size: 1vw;
+}
+
 .nft-img {
   width: 50%;
   height: 100%;

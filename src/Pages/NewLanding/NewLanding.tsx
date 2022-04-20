@@ -81,8 +81,8 @@ const NewLanding = () => {
             <div className="nft-text">
               <div className="title">{trans.nftTitle}</div>
               <div className="desc">{trans.nftDesc}</div>
-              <div className="desc">
-                <p>
+              <div className="smartcontract">
+                
                   SMART CONTRACT ADDRESS:{" "}
                   <a
                     href="https://etherscan.io/"
@@ -92,7 +92,7 @@ const NewLanding = () => {
                   >
                     0x0e5c6b92196a5C7C0CB913e955335a407F3b50fA
                   </a>
-                </p>
+
               </div>
 
               <div className="fire-button-left">
