@@ -9,6 +9,7 @@ import "./NewLanding.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import Slider from "react-slick";
+import { useNavigate } from "react-router-dom";
 
 import fire from "../../Assets/fire.mp4";
 import logo_white from "../../Assets/only-a-logo-white-nobg.png";
@@ -18,8 +19,10 @@ import mother_of_earth from "../../Assets/mother_of_earth.png";
 import mother_of_rice from "../../Assets/mother_of_rice.png";
 import AFEButton from "../../Components/AFEButton/AFEButton";
 import BuyNFT from "../BuyNFT/BuyNFT";
+import About from "../About/About";
 
 const NewLanding = () => {
+  const navigate = useNavigate();
   const trans = translation.LandingPage;
   const imageList = [mother_of_earth, mother_of_rice];
 
@@ -65,7 +68,7 @@ const NewLanding = () => {
                 <div className="fire-button-right">
                   <AFEButton
                     title={"MORE ENVIRONMENT THEME"}
-                    onclick={() => eiei}
+                    onclick={() => navigate("/environmental")}
                     isBlack={false}
                   />
                 </div>
@@ -138,6 +141,7 @@ const NewLanding = () => {
         </Container>
       </div>
       <BuyNFT />
+      <About />
     </div>
   );
 };

@@ -28,7 +28,14 @@
     "title": "FAQ"
   },
   "AboutPage": {
-    "title": "ABOUT US"
+    "title": "ABOUT US",
+    "desc": "Established in 2022, AFE-NFT brings quality environmental artworks to the public and ensures their secure ownership on the blockchain. The project also donates 20% of all proceeds from the sale of its NFTs to reputable environmental charities and a significant proportion to the respective creators of the works.",
+    "team": "TEAM",
+    "john": "Jorn Middelborg",
+    "johnDesc": "With over 20 years of experience dealing in modern and contemporary art across Southeast Asia, Jorn stands at the helm of the AFE-NFT project. He gained his unparalleled expertise in the industry first as the Founder and Managing Director of THAVIBU Gallery, and later as the Founder and CEO of THAVIBU Art Advisory. He also currently serves as a jury member of the NFT Creative Awards",
+    "derek": "Yauvapa ('Derek') Siriwattasit",
+    "derekDesc": "Derek is a Patent Consultant at one of the most prominent international law firms in Bangkok. Equipped with a keen interest in all things blockchain and crypto, alongside their supporting legal framework, he takes charge of regulatory compliance at AFE-NFT. Exciting? For him, it definitely is. He further ensures that all NFT-related transactions performed on and through this website remain legal, above board and in line with existing privacy laws.",
+    "supanat": "Supanat Wanroj"
   },
   "Environmental": {
     "title": "ENVIRONMENTAL THEMES",

@@ -3,7 +3,7 @@ import "./AFEButton.css";
 export interface AFEButtonData {
   title: String;
   isBlack: Boolean;
-  onclick: () => {};
+  onclick: () => void;
 }
 
 const AFEButton = (props: AFEButtonData) => {

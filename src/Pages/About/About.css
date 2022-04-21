@@ -1,0 +1,73 @@
+.header {
+  margin-top: 5vw !important;
+  color: #ffffff;
+}
+
+.detail {
+  color: #ffffff;
+}
+
+.about-wrapper {
+  padding-top: 1vw;
+  margin-top: 10vw;
+  font-family: "Hind", sans-serif;
+  background-color: #000000;
+}
+
+.about-wrapper .title {
+  color: #ffffff;
+  text-align: center;
+  font-size: 3vw;
+  font-weight: 800;
+}
+
+.about-wrapper .desc {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.25vw;
+}
+
+.desc {
+  margin-top: 3vw;
+}
+
+.logo-wrapper {
+  margin-top: 5vw;
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  margin-top: 1vw;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1.5vw;
+}
+
+.team-desc {
+  margin-top: 1vw;
+  color: #ffffff;
+  font-size: 1.25vw;
+  height: 10vw;
+  overflow: hidden;
+}
+
+.team-desc:hover {
+  transition: 0.3s;
+  overflow: unset;
+}
+
+.team-wrapper {
+  margin-top: 5vw;
+  display: flex;
+  justify-content: center;
+  height: 40vw;
+}
+
+.team-container {
+  padding: 1vw;
+}
+
+.avatar-wrapper {
+  margin-left: 0.5vw;
+}

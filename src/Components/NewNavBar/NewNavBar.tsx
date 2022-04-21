@@ -10,26 +10,42 @@ import nav_icon from "../../Assets/afelogo-left-white-nobg.png";
 const NewNavBar = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  var element = document.getElementById("buyNFT");
+  var buyNFTElement = document.getElementById("buyNFT");
+  var aboutElement = document.getElementById("about");
   useEffect(() => {
     // Update the document title using the browser API
-    element = document.getElementById("buyNFT");
+    buyNFTElement = document.getElementById("buyNFT");
+    aboutElement = document.getElementById("about");
   });
 
   const handleTapBuyNFT = () => {
     console.log(location.pathname);
-    console.log(element);
+    console.log(buyNFTElement);
     navigate("/");
 
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+    if (buyNFTElement) {
+      buyNFTElement.scrollIntoView({ behavior: "smooth" });
     } else {
-      console.log(element);
+      console.log(buyNFTElement);
+    }
+  };
+
+  const handleTapAboutUs = () => {
+    console.log(location.pathname);
+    console.log(aboutElement);
+    navigate("/");
+
+    if (aboutElement) {
+      aboutElement.scrollIntoView({ behavior: "smooth" });
+    } else {
+      console.log(aboutElement);
     }
   };
 
   const navBarTab = (tabName: String) => {
     switch (tabName) {
+      case "About Us":
+        return <div onClick={() => handleTapAboutUs()}>{tabName}</div>;
       case "Home":
         return <div onClick={() => navigate("/")}>{tabName}</div>;
       case "Environmental Themes":
