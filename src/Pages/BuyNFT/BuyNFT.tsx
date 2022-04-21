@@ -7,7 +7,7 @@ const BuyNFT = () => {
   const trans = translation.HowToBuyNFTPage;
   return (
     <Container>
-      <div className="buyNFT-wrapper">
+      <div className="buyNFT-wrapper" id="buyNFT">
         <div className="title">{trans.title}</div>
         <div className="desc">{trans.pageDecs}</div>
         <div className="step-title">{trans.step.title}</div>

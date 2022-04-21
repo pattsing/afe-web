@@ -5,6 +5,28 @@ import "./NewNavBar.css";
 import nav_icon from "../../Assets/afelogo-left-white-nobg.png";
 
 const NewNavBar = () => {
+  var element = document.getElementById("buyNFT");
+
+  const navBarTab = (tabName: String) => {
+    switch (tabName) {
+      case "How to Buy NFT":
+        return (
+          <div
+            onClick={() =>
+              element
+                ? element.scrollIntoView({ behavior: "smooth" })
+                : console.log("can't find")
+            }
+          >
+            {tabName}
+          </div>
+        );
+
+      default:
+        return <div>{tabName}</div>;
+    }
+  };
+
   return (
     <div className="nav-wrapper">
       <Container maxWidth="xl">
@@ -14,7 +36,7 @@ const NewNavBar = () => {
             <div className="nav-space" />
             <div className="nav-list">
               {NavBarData.map((el) => {
-                return <div>{el.tabName}</div>;
+                return navBarTab(el.tabName);
               })}
             </div>
           </div>
