@@ -45,5 +45,9 @@
     "plastic": "PLASTIC POLLUTION",
     "population": "POPULATION GROWTH",
     "consumer": "CONSUMER ECONOMY"
+  },
+
+  "ArtWorks": {
+    "title": "ARTWORKS"
   }
 }

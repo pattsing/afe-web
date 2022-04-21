@@ -44,6 +44,8 @@ const NewNavBar = () => {
 
   const navBarTab = (tabName: String) => {
     switch (tabName) {
+      case "Artworks":
+        return <div onClick={() => navigate("/artworks")}>{tabName}</div>;
       case "About Us":
         return <div onClick={() => handleTapAboutUs()}>{tabName}</div>;
       case "Home":

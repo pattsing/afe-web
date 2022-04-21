@@ -2,3 +2,36 @@
     margin-top: 5vw !important;
     color: #ffffff;
 }
+.art-wrapper {
+    font-family: "Hind", sans-serif;
+}
+
+.card-wrapper {
+    display: flex;
+    padding: 2vw 3vw;
+    margin: 3vw;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.art-img {
+    width: 100%;
+}
+
+.art-title {
+    font-size: 1.5vw;
+    
+}
+
+.art-artist {
+    font-size: 1vw;
+}
+
+.art-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.info-wrapper {
+    text-align: end;
+}

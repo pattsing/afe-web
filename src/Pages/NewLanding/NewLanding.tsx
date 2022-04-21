@@ -132,7 +132,7 @@ const NewLanding = () => {
               <div className="fire-button-right">
                 <AFEButton
                   title={"List of artworks"}
-                  onclick={() => eiei}
+                  onclick={() => navigate("/artworks")}
                   isBlack={false}
                 />
               </div>

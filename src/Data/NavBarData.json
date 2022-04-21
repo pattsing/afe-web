@@ -4,7 +4,7 @@
     "tabRoute": "/"
   },
   {
-    "tabName": "Art Works",
+    "tabName": "Artworks",
     "tabRoute": "/artworks",
     "tabMenu": ["Vasan1", "Vasan2"]
   },
