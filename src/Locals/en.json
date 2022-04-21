@@ -10,6 +10,20 @@
     "sourceTitle": "SOURCE OF ART",
     "sourceDesc": "The environmental artworks on AFE-NFT have been meticulously curated from Southeast Asia and elsewhere around the globe. The pieces on display were created by celebrated artists, whose works have been sold at international auction houses and recognized worldwide in numerous art exhibitions, museums and biennales. Their originals were conceived in a variety of media, such as paintings, prints, art installations, video stills, and photography among others."
   },
+  "HowToBuyNFTPage": {
+    "title": "How to Buy NFTs",
+    "pageDecs": "If you already own the cryptocurrency, Ether, you will know how to purchase NFTs on the blockchain at OpenSea.io using the Ether currency.",
+    "step": {
+      "title": "If you are new to buying NFTs, please follow these steps:",
+      "step1": "Download and register on a cryptocurrency exchange app, the most accessible being Binance, Zipmex, Bitkub and Coinbase.",
+      "step2": "Download and register on an online digital wallet, preferably MetaMask. Once you have registered an account on MetaMask, you will be required to set your password and provided your seed phrases. Please note all this information on a piece of paper and store it in a secure place.",
+      "step3": "Connect your bank account to the cryptocurrency exchange app.",
+      "step4": "Deposit cash from your linked bank account into your registered account on the cryptocurrency exchange app.",
+      "step5": "Place an order for Ether using your deposited cash and store your Ether in your digital wallet.",
+      "step6": "Go to OpenSea, open an account and link your digital wallet to the platform.",
+      "step7": "Find the NFT in question and then use your Ether currency in your digital wallet to buy the NFT. The purchased NFT will be stored in your digital wallet."
+    }
+  },
   "FaqPage": {
     "title": "FAQ"
   },

@@ -17,6 +17,7 @@ import logo_wwf from "../../Assets/wwflogo.jpeg";
 import mother_of_earth from "../../Assets/mother_of_earth.png";
 import mother_of_rice from "../../Assets/mother_of_rice.png";
 import AFEButton from "../../Components/AFEButton/AFEButton";
+import BuyNFT from "../BuyNFT/BuyNFT";
 
 const NewLanding = () => {
   const trans = translation.LandingPage;
@@ -136,6 +137,7 @@ const NewLanding = () => {
           </div>
         </Container>
       </div>
+      <BuyNFT />
     </div>
   );
 };
