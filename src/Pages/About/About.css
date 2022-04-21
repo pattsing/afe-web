@@ -48,13 +48,17 @@
   margin-top: 1vw;
   color: #ffffff;
   font-size: 1.25vw;
-  height: 10vw;
+
   overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  height: auto;
+  max-height: 10vw;
+  /* text-overflow: ellipsis;
+  white-space: nowrap; */
 }
 
 .team-desc:hover {
-  transition: 0.3s;
-  overflow: unset;
+  max-height: 30vw;
 }
 
 .team-wrapper {

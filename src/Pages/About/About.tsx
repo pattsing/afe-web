@@ -36,7 +36,7 @@ const About = () => {
               />
             </div>
             <div className="name">{trans.derek}</div>
-            <div className="team-desc">{trans.derekDesc}&#x2122;</div>
+            <div className="team-desc">{trans.derekDesc}</div>
           </div>
           <div className="team-container">
             <div className="avatar-wrapper">
