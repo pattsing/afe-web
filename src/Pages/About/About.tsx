@@ -18,10 +18,10 @@ const About = () => {
         <div className="team-wrapper">
           <div className="team-container">
             <div className="avatar-wrapper">
-              <Avatar
+              <img
+                className="avatar"
                 alt="John"
                 src="https://scontent.fbkk12-3.fna.fbcdn.net/v/t1.6435-9/62258414_10211713225986000_6669460804774920192_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=aLp_66-brwIAX-SJ8QC&_nc_oc=AQldvh8KcRW6Hqx9f9s3zgFut17WL4VhItN5oS_8_AisLWl91Xg3D-QwTZZm_pfDh8Y&tn=2oXorfxf-rXozr-d&_nc_ht=scontent.fbkk12-3.fna&oh=00_AT8-g5YFUq_fH-bTd13a3UE_2iyYWbDY0xiB-nJ-jMKzOQ&oe=628186E0"
-                sx={{ width: 100, height: 100 }}
               />
             </div>
             <div className="name">{trans.john}</div>
@@ -29,10 +29,10 @@ const About = () => {
           </div>
           <div className="team-container">
             <div className="avatar-wrapper">
-              <Avatar
+              <img
+                className="avatar"
                 alt="derek"
                 src="https://scontent.fbkk12-4.fna.fbcdn.net/v/t39.30808-6/241380678_10159612365443670_5475116588923327052_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=7crZjMZ0IaoAX-Z_bT5&_nc_ht=scontent.fbkk12-4.fna&oh=00_AT_37MaVHQKkJHHGAglHSVTBMCWxKGEEqfZTHDUmNt1hYw&oe=626188EB"
-                sx={{ width: 100, height: 100 }}
               />
             </div>
             <div className="name">{trans.derek}</div>
@@ -40,14 +40,14 @@ const About = () => {
           </div>
           <div className="team-container">
             <div className="avatar-wrapper">
-              <Avatar
+              <img
+                className="avatar"
                 alt="John"
                 src="https://mildspace.files.wordpress.com/2022/04/jn2_0022.jpg?resize=214%2C214"
-                sx={{ width: 100, height: 100 }}
               />
             </div>
             <div className="name">{trans.supanat}</div>
-            <div className="team-desc">{trans.johnDesc}&#x2122;</div>
+            <div className="team-desc">{trans.supanatDesc}</div>
           </div>
         </div>
       </Container>

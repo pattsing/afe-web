@@ -75,3 +75,9 @@
 .avatar-wrapper {
   margin-left: 0.5vw;
 }
+
+.avatar {
+  border-radius: 50%;
+  width: 7vw;
+  height: 7vw;
+}
