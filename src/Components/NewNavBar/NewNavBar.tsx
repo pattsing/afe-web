@@ -2,25 +2,40 @@ import Container from "@mui/material/Container";
 import NavBarData from "../../Data/NavBarData.json";
 import "./NewNavBar.css";
 
+import { useNavigate, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+
 import nav_icon from "../../Assets/afelogo-left-white-nobg.png";
 
 const NewNavBar = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
   var element = document.getElementById("buyNFT");
+  useEffect(() => {
+    // Update the document title using the browser API
+    element = document.getElementById("buyNFT");
+  });
+
+  const handleTapBuyNFT = () => {
+    console.log(location.pathname);
+    console.log(element);
+    navigate("/");
+
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    } else {
+      console.log(element);
+    }
+  };
 
   const navBarTab = (tabName: String) => {
     switch (tabName) {
+      case "Home":
+        return <div onClick={() => navigate("/")}>{tabName}</div>;
+      case "Environmental Themes":
+        return <div onClick={() => navigate("/environmental")}>{tabName}</div>;
       case "How to Buy NFT":
-        return (
-          <div
-            onClick={() =>
-              element
-                ? element.scrollIntoView({ behavior: "smooth" })
-                : console.log("can't find")
-            }
-          >
-            {tabName}
-          </div>
-        );
+        return <div onClick={() => handleTapBuyNFT()}>{tabName}</div>;
 
       default:
         return <div>{tabName}</div>;
