@@ -43,7 +43,9 @@ const Faq = () => {
                 <AccordionDetails
                   style={{ fontFamily: `"Hind", sans-serif`, fontSize: "1vw" }}
                 >
-                  {faq.answer}
+                  {faq.answer.map((answer) => {
+                    return <div>{answer}</div>;
+                  })}
                 </AccordionDetails>
               </Accordion>
             );
