@@ -1,9 +1,6 @@
 import Container from "@mui/material/Container";
 import NewNavBar from "../../Components/NewNavBar/NewNavBar";
 import Card from "@mui/material/Card";
-import { CardMedia } from "@mui/material";
-import SlideShow from "../../Components/SlideShow/SlideShow";
-import { SlideShowImage } from "../../Model/ImageModel";
 import translation from "../../Locals/en.json";
 import "./NewLanding.css";
 import "swiper/css";
@@ -20,6 +17,7 @@ import mother_of_rice from "../../Assets/mother_of_rice.png";
 import AFEButton from "../../Components/AFEButton/AFEButton";
 import BuyNFT from "../BuyNFT/BuyNFT";
 import About from "../About/About";
+import Faq from "../Faq/Faq";
 
 const NewLanding = () => {
   const navigate = useNavigate();
@@ -111,7 +109,6 @@ const NewLanding = () => {
             </div>
           </div>
         </Container>
-        {/* </div> */}
       </div>
       <div className="content-world">
         <Container className="fire-container">
@@ -141,6 +138,7 @@ const NewLanding = () => {
         </Container>
       </div>
       <BuyNFT />
+      <Faq />
       <About />
     </div>
   );

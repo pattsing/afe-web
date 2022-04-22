@@ -1,0 +1,13 @@
+.faq-wrapper {
+  font-family: "Hind", sans-serif;
+}
+
+.faq-wrapper .title {
+  text-align: center;
+  font-size: 3vw;
+  font-weight: 800;
+}
+
+.faq-wrapper .list {
+  margin-top: 3vw;
+}

@@ -21,16 +21,16 @@ const BuyNFT = () => {
           <div style={{ backgroundColor: "rgb(249,185,46)" }}>1</div>
           <div>{trans.step.step1}</div>
           <div id="card-step-1-details">
-            <img src={bitkub_icon} />
-            <img src={coinbase_icon} />
-            <img src={zipmex_icon} />
-            <img src={binance_icon} />
+            <img src={bitkub_icon} alt="bitkub icon" />
+            <img src={coinbase_icon} alt="coinbase icon" />
+            <img src={zipmex_icon} alt="zipmex icon" />
+            <img src={binance_icon} alt="binance icon" />
           </div>
         </Card>
         <Card className="card-step">
           <div style={{ backgroundColor: "rgb(190,157,51)" }}>2</div>
           <div id="card-step-2-details">
-            <img src={meta_mark} />
+            <img src={meta_mark} alt="meta mask icon" />
           </div>
           <div>{trans.step.step2}</div>
         </Card>
