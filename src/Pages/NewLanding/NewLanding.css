@@ -133,6 +133,7 @@
 .img-third-para {
   width: 95%;
   border-radius: 2vw;
+  pointer-events: none;
 }
 
 .slide-div {

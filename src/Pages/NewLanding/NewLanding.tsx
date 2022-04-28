@@ -54,7 +54,7 @@ const NewLanding = () => {
             </div>
           </Container>
         </div>
-        <div className="content-world">
+        {/* <div className="content-world">
           <Container className="fire-container">
             <div className="fire-wrapper">
               <video className="fire-vdo" autoPlay muted loop>
@@ -73,7 +73,7 @@ const NewLanding = () => {
               </div>
             </div>
           </Container>
-        </div>
+        </div> */}
         <Container className="content-nft">
           <div className="nft-wrapper">
             <div className="nft-text">
@@ -137,7 +137,6 @@ const NewLanding = () => {
           </div>
         </Container>
       </div>
-      <BuyNFT />
       <Faq />
       <About />
     </div>

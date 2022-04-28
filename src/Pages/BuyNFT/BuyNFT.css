@@ -44,7 +44,7 @@
   color: white;
 }
 
-#card-step-1-details {
+#card-step-details-multi {
   width: 50%;
   height: 10vw;
   display: flex;
@@ -52,15 +52,25 @@
   align-items: center;
 }
 
-#card-step-1-details img {
+#card-step-details-multi img {
   width: 5vw;
   height: 5vw;
 }
 
-#card-step-2-details {
+#card-step-details-single {
   height: 10vw;
 }
 
-#card-step-2-details img {
+#card-step-details-single img {
   height: 100%;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0 1vw;
 }

@@ -19,7 +19,7 @@ const Faq = () => {
 
   return (
     <Container style={{ padding: "5vw 10vw 0vw 10vw" }}>
-      <div className="faq-wrapper">
+      <div className="faq-wrapper" id="faq">
         <div className="title">{trans.title}</div>
         <div className="list">
           {faqData.map((faq, index) => {

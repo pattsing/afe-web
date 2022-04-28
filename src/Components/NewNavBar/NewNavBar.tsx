@@ -12,10 +12,12 @@ const NewNavBar = () => {
   const location = useLocation();
   var buyNFTElement = document.getElementById("buyNFT");
   var aboutElement = document.getElementById("about");
+  var faqElement = document.getElementById("faq");
   useEffect(() => {
     // Update the document title using the browser API
     buyNFTElement = document.getElementById("buyNFT");
     aboutElement = document.getElementById("about");
+    faqElement = document.getElementById("faq");
   });
 
   const handleTapBuyNFT = () => {
@@ -42,8 +44,22 @@ const NewNavBar = () => {
     }
   };
 
+  const handleTapFAQ = () => {
+    console.log(location.pathname);
+    console.log(faqElement);
+    navigate("/");
+
+    if (faqElement) {
+      faqElement.scrollIntoView({ behavior: "smooth" });
+    } else {
+      console.log(faqElement);
+    }
+  };
+
   const navBarTab = (tabName: String) => {
     switch (tabName) {
+      case "FAQ":
+        return <div onClick={() => handleTapFAQ()}>{tabName}</div>;
       case "Artworks":
         return <div onClick={() => navigate("/artworks")}>{tabName}</div>;
       case "About Us":
@@ -53,7 +69,8 @@ const NewNavBar = () => {
       case "Environmental Themes":
         return <div onClick={() => navigate("/environmental")}>{tabName}</div>;
       case "How to Buy NFT":
-        return <div onClick={() => handleTapBuyNFT()}>{tabName}</div>;
+        return <div onClick={() => navigate("/buy-nft")}>{tabName}</div>;
+        // return <div onClick={() => handleTapBuyNFT()}>{tabName}</div>;
 
       default:
         return <div>{tabName}</div>;
