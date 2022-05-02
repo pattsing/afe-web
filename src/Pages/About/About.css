@@ -47,12 +47,12 @@
 .team-desc {
   margin-top: 1vw;
   color: #ffffff;
-  font-size: 1.25vw;
+  font-size: 1vw;
 
   overflow: hidden;
   transition: max-height 0.3s ease-out;
   height: auto;
-  max-height: 10vw;
+  max-height: 8vw;
   /* text-overflow: ellipsis;
   white-space: nowrap; */
 }

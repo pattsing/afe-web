@@ -3,10 +3,10 @@
     "title": "HOME",
     "bannerQuote": "ART FOR  ENVIRONMENT – NFT",
     "bannerDesc": "(affiliated with THAVIBU Art Advisory)",
-    "worldTitle": "WORLD ARE CRYING!",
-    "worldDesc": "Mother Earth needs your help. With the fallout from climate change and mass extinctions looming, she is slipping away right under our noses. Art for Environment – NFT (AFE-NFT) aims to slow her decay by becoming a vehicle for aiding her recovery.",
+    "worldTitle": "MOTHER EARTH NEEDS YOUR HELP!",
+    "worldDesc": "With the fallout from climate change and mass extinctions looming, Mother Earth is slipping away right under our noses. Art for Environment – NFT (AFE-NFT) aims to slow her decay by becoming a vehicle for aiding her recovery.",
     "nftTitle": "WHAT IS AFE-NFT?",
-    "nftDesc": "AFE-NFT is online collection of high-quality artworks that poignantly address current and pressing environmental issues. These artworks by renowned artists Minted and stored as ERC-721 tokens, Each artworks contains 3 Token of the same artwork, priced at USD 2,700 per piece. 20% of all our proceeds will be donated to several environmental charities, including the World Wildlife Fund (WWF) and Climate Action Network (CAN). The remaining balance will be equally divided between the artist and the project",
+    "nftDesc": "AFE-NFT features an online collection of high-quality artworks that poignantly addresses current and pressing environmental issues. Minted as single or limited edition NFTs (Non-Fungible Tokens) and stored as ERC-721 tokens, these artworks by renowned artists can be bought and safely accessed through your online ‘wallet’. Each limited edition contains three (3) tokens of the same artwork, all priced in Ether. Twenty percent of our proceeds will be donated to several environmental charities, including the Rainforest Foundation US (RFUS). The remaining balance will be equally divided between the artist and the project.",
     "sourceTitle": "SOURCE OF ART",
     "sourceDesc": "The environmental artworks on AFE-NFT have been meticulously curated from Southeast Asia and elsewhere around the globe. The pieces on display were created by celebrated artists, whose works have been sold at international auction houses and recognized worldwide in numerous art exhibitions, museums and biennales. Their originals were conceived in a variety of media, such as paintings, prints, art installations, video stills, and photography among others."
   },
@@ -16,7 +16,7 @@
     "step": {
       "title": "If you are new to buying NFTs, please follow these steps:",
       "step1": "Download and register on a cryptocurrency exchange app, the most accessible being Binance, Zipmex, Bitkub and Coinbase.",
-      "step2": "Download and register on an online digital wallet, preferably MetaMask. Once you have registered an account on MetaMask, you will be required to set your password and provided your seed phrases. Please note all this information on a piece of paper and store it in a secure place.",
+      "step2": "Download and register on an online digital wallet, namely MetaMask. Once you have registered an account on MetaMask, you will be required to set your password and provided your seed phrases. Please note all this information on a piece of paper and store it in a secure place.",
       "step3": "Connect your bank account to the cryptocurrency exchange app.",
       "step4": "Deposit cash from your linked bank account into your registered account on the cryptocurrency exchange app.",
       "step5": "Place an order for Ether using your deposited cash and store your Ether in your digital wallet.",
@@ -36,7 +36,7 @@
     "derek": "Yauvapa ('Derek') Siriwattasit",
     "derekDesc": "Derek is a Patent Consultant at one of the most prominent international law firms in Bangkok. Equipped with a keen interest in all things blockchain and crypto, alongside their supporting legal framework, he takes charge of regulatory compliance at AFE-NFT. Exciting? For him, it definitely is. He further ensures that all NFT-related transactions performed on and through this website remain legal, above board and in line with existing privacy laws.",
     "supanat": "Supanat Wanroj",
-    "supanatDesc": "Start from role iOS Developer in banking company. In out off office time Mild hobby is learn in blockchain technology such as smart contract, NFT, on-chain off-chain and web3. Mild have a personal blog the blog is mild-space.com this blog contain the lifestyle, review, and blockchain"
+    "supanatDesc": "Our resident IT wizard, Supanat codes for a living as an iOS Developer for one of the major financial institutions in Thailand. You can find him engrossed in learning the latest trends and advancements in blockchain technology outside office hours. His main areas of interest include smart contracts, NFTs, on-chain/off-chain transactions, and Web 3.0. Supanat’s expertise and commentary on anything blockchain have been recorded for posterity on his personal blog, mild- space.com."
   },
   "Environmental": {
     "title": "ENVIRONMENTAL THEMES",
