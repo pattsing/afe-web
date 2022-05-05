@@ -36,6 +36,23 @@
     border-radius: 2vw;
   }
 
+  .fire-video {
+    width: 50%;
+    border-radius: 2vw;
+  }
+
   .title {
       font-size: 1.5vw;
+  }
+  .morther-wrapper {
+    margin-left: 3vw;
+  }
+
+  .morther-title {
+    font-size: 1.5vw;
+  }
+  
+  .morther-desc {
+    margin-top: 1vw;
+    font-size: 1vw;
   }

@@ -1,5 +1,7 @@
 .faq-wrapper {
   font-family: "Hind", sans-serif;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
 }
 
 .faq-wrapper .title {
@@ -8,6 +10,10 @@
   font-weight: 800;
 }
 
-.faq-wrapper .list {
+.list {
   margin-top: 3vw;
+}
+
+.faq-link {
+  color: black;
 }

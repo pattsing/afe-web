@@ -8,16 +8,13 @@ import "swiper/css/pagination";
 import Slider from "react-slick";
 import { useNavigate } from "react-router-dom";
 
-import fire from "../../Assets/fire.mp4";
+
 import logo_white from "../../Assets/only-a-logo-white-nobg.png";
 import logo_can from "../../Assets/canlogo.jpeg";
 import logo_wwf from "../../Assets/wwflogo.jpeg";
 import mother_of_earth from "../../Assets/mother_of_earth.png";
 import mother_of_rice from "../../Assets/mother_of_rice.png";
 import AFEButton from "../../Components/AFEButton/AFEButton";
-import BuyNFT from "../BuyNFT/BuyNFT";
-import About from "../About/About";
-import Faq from "../Faq/Faq";
 
 const NewLanding = () => {
   const navigate = useNavigate();
@@ -137,8 +134,8 @@ const NewLanding = () => {
           </div>
         </Container>
       </div>
-      <Faq />
-      <About />
+      {/* <Faq /> */}
+      {/* <About /> */}
     </div>
   );
 };

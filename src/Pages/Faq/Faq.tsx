@@ -6,6 +6,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import { SyntheticEvent, useState } from "react";
 import translation from "../../Locals/en.json";
 import faqData from "../../Data/FAQData.json";
+import NewNavBar from "../../Components/NewNavBar/NewNavBar";
 
 import "./Faq.css";
 
@@ -18,41 +19,50 @@ const Faq = () => {
     };
 
   return (
-    <Container style={{ padding: "5vw 10vw 0vw 10vw" }}>
-      <div className="faq-wrapper" id="faq">
-        <div className="title">{trans.title}</div>
-        <div className="list">
-          {faqData.map((faq, index) => {
-            return (
-              <Accordion
-                expanded={expanded === `faq-${index}`}
-                onChange={handleChange(`faq-${index}`)}
-              >
-                <AccordionSummary
-                  expandIcon={<ExpandMore />}
-                  aria-controls="panel1bh-content"
-                  id={`faq-question-${index}`}
-                  style={{
-                    fontFamily: `"Hind", sans-serif`,
-                    fontSize: "1vw",
-                    fontWeight: 600,
-                  }}
+    <div>
+      <NewNavBar></NewNavBar>
+      <Container>
+        <div className="faq-wrapper" id="faq">
+          <div className="title">{trans.title}</div>
+          <div className="list">
+            {faqData.map((faq, index) => {
+              return (
+                <Accordion
+                  expanded={expanded === `faq-${index}`}
+                  onChange={handleChange(`faq-${index}`)}
                 >
-                  {faq.question}
-                </AccordionSummary>
-                <AccordionDetails
-                  style={{ fontFamily: `"Hind", sans-serif`, fontSize: "1vw" }}
-                >
-                  {faq.answer.map((answer) => {
-                    return <div>{answer}</div>;
-                  })}
-                </AccordionDetails>
-              </Accordion>
-            );
-          })}
+                  <AccordionSummary
+                    expandIcon={<ExpandMore />}
+                    aria-controls="panel1bh-content"
+                    id={`faq-question-${index}`}
+                    style={{
+                      fontFamily: `"Hind", sans-serif`,
+                      fontSize: "1vw",
+                      fontWeight: 600,
+                    }}
+                  >
+                    {faq.question}
+                  </AccordionSummary>
+                  <AccordionDetails
+                    style={{
+                      fontFamily: `"Hind", sans-serif`,
+                      fontSize: "1vw",
+                    }}
+                  >
+                    {faq.answer.map((answer) => {
+                      return <div>{answer}</div>;
+                    })}
+                    <a href={faq.link} className="faq-link" target="_blank">
+                      {faq.link}
+                    </a>
+                  </AccordionDetails>
+                </Accordion>
+              );
+            })}
+          </div>
         </div>
-      </div>
-    </Container>
+      </Container>
+    </div>
   );
 };
 export default Faq;

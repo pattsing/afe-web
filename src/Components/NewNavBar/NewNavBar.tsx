@@ -20,57 +20,20 @@ const NewNavBar = () => {
     faqElement = document.getElementById("faq");
   });
 
-  const handleTapBuyNFT = () => {
-    console.log(location.pathname);
-    console.log(buyNFTElement);
-    navigate("/");
-
-    if (buyNFTElement) {
-      buyNFTElement.scrollIntoView({ behavior: "smooth" });
-    } else {
-      console.log(buyNFTElement);
-    }
-  };
-
-  const handleTapAboutUs = () => {
-    console.log(location.pathname);
-    console.log(aboutElement);
-    navigate("/");
-
-    if (aboutElement) {
-      aboutElement.scrollIntoView({ behavior: "smooth" });
-    } else {
-      console.log(aboutElement);
-    }
-  };
-
-  const handleTapFAQ = () => {
-    console.log(location.pathname);
-    console.log(faqElement);
-    navigate("/");
-
-    if (faqElement) {
-      faqElement.scrollIntoView({ behavior: "smooth" });
-    } else {
-      console.log(faqElement);
-    }
-  };
-
   const navBarTab = (tabName: String) => {
     switch (tabName) {
       case "FAQ":
-        return <div onClick={() => handleTapFAQ()}>{tabName}</div>;
+        return <div onClick={() => navigate("/faq")}>{tabName}</div>;
       case "Artworks":
         return <div onClick={() => navigate("/artworks")}>{tabName}</div>;
       case "About Us":
-        return <div onClick={() => handleTapAboutUs()}>{tabName}</div>;
+        return <div onClick={() => navigate("/about")}>{tabName}</div>;
       case "Home":
         return <div onClick={() => navigate("/")}>{tabName}</div>;
       case "Environmental Themes":
         return <div onClick={() => navigate("/environmental")}>{tabName}</div>;
       case "How to Buy NFT":
         return <div onClick={() => navigate("/buy-nft")}>{tabName}</div>;
-        // return <div onClick={() => handleTapBuyNFT()}>{tabName}</div>;
 
       default:
         return <div>{tabName}</div>;
