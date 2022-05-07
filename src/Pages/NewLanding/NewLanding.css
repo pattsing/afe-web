@@ -19,6 +19,24 @@
   flex-direction: column;
 }
 
+.landing-banner-mobile {
+  width: 100%;
+  height: 30vw;
+  background: linear-gradient(
+    90deg,
+    rgba(253, 187, 45, 1) 0%,
+    rgba(55, 92, 64, 1) 40%,
+    rgba(4, 44, 98, 1) 100%
+  );
+  font-family: "Hind", sans-serif;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin-top: 12.5vw;
+}
+
 .banner-content-wrapper {
   display: flex;
 }
@@ -28,9 +46,19 @@
   font-size: 2vw;
 }
 
+.banner-quote-mobile {
+  font-weight: 800;
+  font-size: 5vw;
+}
+
 .banner-desc {
   font-weight: 400;
   font-size: 1vw;
+}
+
+.banner-desc-mobile {
+  font-weight: 400;
+  font-size: 3vw;
 }
 
 .banner-bg {
@@ -40,6 +68,13 @@
   right: 15vw;
 }
 
+.banner-bg-mobile {
+  width: 27.68vw;
+  position: absolute;
+  top: 13vw;
+  right: 4vw;
+}
+
 .content-world {
   height: 35vw;
   background-color: rgba(0, 0, 0, 0.92);
@@ -47,6 +82,10 @@
 
 .content-nft {
   height: 35vw;
+}
+
+.content-nft-mobile {
+  height: 100%;
 }
 
 .fire-container {
@@ -89,10 +128,36 @@
   margin-top: 2vw;
 }
 
+.fire-button-left-mobile {
+  margin-top: 2vw;
+  font-size: 2vw;
+}
+
 .nft-wrapper {
   height: 100%;
   display: flex;
   align-items: center;
+}
+
+.nft-wrapper-mobile {
+  height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nft-text-mobile {
+  width: 80%;
+  margin-top: 3vw;
+}
+
+.nft-text-mobile .title {
+  font-size: 3vw;
+}
+
+.nft-text-mobile .desc {
+  font-size: 2vw;
+  text-align: justify;
 }
 
 .nft-text {
@@ -113,6 +178,11 @@
   font-size: 1vw;
 }
 
+.smartcontract-mobile {
+  margin-top: 1vw;
+  font-size: 2vw;
+}
+
 .nft-img {
   width: 50%;
   height: 100%;
@@ -121,11 +191,21 @@
   justify-content: center;
 }
 
-.nft-img .card {
+.nft-img-mobile {
+  margin-top: 1vw;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3vw;
+}
+
+.nft-img .card, .nft-img-mobile .card {
   width: 40%;
 }
 
-.nft-img .card > img {
+.nft-img .card > img,  .nft-img-mobile .card > img{
   width: 100%;
   height: 100%;
 }

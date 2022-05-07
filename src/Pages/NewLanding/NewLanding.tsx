@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import Slider from "react-slick";
 import { useNavigate } from "react-router-dom";
-
+import { useMediaQuery } from "react-responsive";
 
 import logo_white from "../../Assets/only-a-logo-white-nobg.png";
 import logo_can from "../../Assets/canlogo.jpeg";
@@ -17,6 +17,11 @@ import mother_of_rice from "../../Assets/mother_of_rice.png";
 import AFEButton from "../../Components/AFEButton/AFEButton";
 
 const NewLanding = () => {
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-width: 768px)",
+  });
+  const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
+
   const navigate = useNavigate();
   const trans = translation.LandingPage;
   const imageList = [mother_of_earth, mother_of_rice];
@@ -40,14 +45,25 @@ const NewLanding = () => {
     <div>
       <NewNavBar></NewNavBar>
       <div className="page-wrapper">
-        <div className="landing-banner">
+        <div className={isMobile ? "landing-banner-mobile" : "landing-banner"}>
           <Container>
             <div>
               <div>
-                <div className="banner-quote">{trans.bannerQuote}</div>
-                <div className="banner-desc">{trans.bannerDesc}</div>
+                <div
+                  className={isMobile ? "banner-quote-mobile" : "banner-quote"}
+                >
+                  {trans.bannerQuote}
+                </div>
+                <div
+                  className={isMobile ? "banner-desc-mobile" : "banner-desc"}
+                >
+                  {trans.bannerDesc}
+                </div>
               </div>
-              <img className="banner-bg" src={logo_white}></img>
+              <img
+                className={isMobile ? "banner-bg-mobile" : "banner-bg"}
+                src={logo_white}
+              ></img>
             </div>
           </Container>
         </div>
@@ -71,12 +87,14 @@ const NewLanding = () => {
             </div>
           </Container>
         </div> */}
-        <Container className="content-nft">
-          <div className="nft-wrapper">
-            <div className="nft-text">
+        <Container className={isMobile ? "content-nft-mobile" : "content-nft"}>
+          <div className={isMobile ? "nft-wrapper-mobile" : "nft-wrapper"}>
+            <div className={isMobile ? "nft-text-mobile" : "nft-text"}>
               <div className="title">{trans.nftTitle}</div>
               <div className="desc">{trans.nftDesc}</div>
-              <div className="smartcontract">
+              <div
+                className={isMobile ? "smartcontract-mobile" : "smartcontract"}
+              >
                 SMART CONTRACT ADDRESS:{" "}
                 <a
                   href="https://etherscan.io/"
@@ -88,7 +106,11 @@ const NewLanding = () => {
                 </a>
               </div>
 
-              <div className="fire-button-left">
+              <div
+                className={
+                  isMobile ? "fire-button-left-mobile" : "fire-button-left"
+                }
+              >
                 <AFEButton
                   title={"GO TO OPENSEA COLLECTION"}
                   onclick={() => eiei}
@@ -96,12 +118,9 @@ const NewLanding = () => {
                 />
               </div>
             </div>
-            <div className="nft-img">
+            <div className={isMobile ? "nft-img-mobile" : "nft-img"}>
               <Card className="card">
                 <img src={logo_wwf} />
-              </Card>
-              <Card className="card">
-                <img src={logo_can} />
               </Card>
             </div>
           </div>

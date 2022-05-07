@@ -1,3 +1,26 @@
+.afe-button-black-mobile {
+  padding: 0.5vw 1vw;
+  padding: 0.5vw;
+  color: black;
+  border-radius: 0.5vw;
+  border-style: solid;
+  border-width: 0.1vw;
+  border-color: black;
+  width: fit-content;
+  font-size: 2vw;
+}
+
+.afe-button-white-mobile {
+  padding: 0.5vw 1vw;
+  color: white;
+  border-radius: 0.5vw;
+  border-style: solid;
+  border-width: 0.1vw;
+  border-color: white;
+  width: fit-content;
+  font-size: 2vw;
+}
+
 .afe-button-black {
   padding: 0.5vw 1vw;
   padding: 0.5vw;
