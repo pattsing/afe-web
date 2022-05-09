@@ -15,6 +15,7 @@ import logo_wwf from "../../Assets/wwflogo.jpeg";
 import mother_of_earth from "../../Assets/mother_of_earth.png";
 import mother_of_rice from "../../Assets/mother_of_rice.png";
 import AFEButton from "../../Components/AFEButton/AFEButton";
+import Footer from "../../Components/Footer/Footer";
 
 const NewLanding = () => {
   const isDesktopOrLaptop = useMediaQuery({
@@ -126,10 +127,10 @@ const NewLanding = () => {
           </div>
         </Container>
       </div>
-      <div className="content-world">
+      <div className={isMobile ? "content-world-mobile" : "content-world"}>
         <Container className="fire-container">
           <div className="fire-wrapper">
-            <div className="slide-div">
+            <div className={isMobile ? "slide-div-mobile" : "slide-div"}>
               <Slider {...settings}>
                 {imageList.map((item, index) => (
                   <div>
@@ -140,8 +141,12 @@ const NewLanding = () => {
             </div>
 
             <div>
-              <div className="fire-title">{trans.sourceTitle}</div>
-              <div className="fire-desc">{trans.sourceDesc}</div>
+              <div className={isMobile ? "fire-title-mobile" : "fire-title"}>
+                {trans.sourceTitle}
+              </div>
+              <div className={isMobile ? "fire-desc-mobile" : "fire-desc"}>
+                {trans.sourceDesc}
+              </div>
               <div className="fire-button-right">
                 <AFEButton
                   title={"List of artworks"}
@@ -155,6 +160,7 @@ const NewLanding = () => {
       </div>
       {/* <Faq /> */}
       {/* <About /> */}
+      <Footer></Footer>
     </div>
   );
 };

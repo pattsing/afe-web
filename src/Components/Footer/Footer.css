@@ -2,7 +2,7 @@
     display: flex;
     flex: 1;
     padding: 1rem 0;
-    border-top: 1px solid #eaeaea;
+    border-top: 1px solid #000000;
     justify-content: center;
     align-items: center;
     bottom: 0px;
@@ -10,7 +10,7 @@
     width: 100%;
     font-size: 14px;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
   }
   
   .footer a {
