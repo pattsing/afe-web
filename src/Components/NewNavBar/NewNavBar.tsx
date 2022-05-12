@@ -38,20 +38,44 @@ const NewNavBar = () => {
   const navBarTab = (tabName: String) => {
     switch (tabName) {
       case "FAQ":
-        return <div onClick={() => navigate("/faq")}>{tabName}</div>;
+        return (
+          <div className="nav-item" onClick={() => navigate("/faq")}>
+            {tabName}
+          </div>
+        );
       case "Artworks":
-        return <div onClick={() => navigate("/artworks")}>{tabName}</div>;
+        return (
+          <div className="nav-item" onClick={() => navigate("/artworks")}>
+            {tabName}
+          </div>
+        );
       case "About Us":
-        return <div onClick={() => navigate("/about")}>{tabName}</div>;
+        return (
+          <div className="nav-item" onClick={() => navigate("/about")}>
+            {tabName}
+          </div>
+        );
       case "Home":
-        return <div onClick={() => navigate("/")}>{tabName}</div>;
+        return (
+          <div className="nav-item" onClick={() => navigate("/")}>
+            {tabName}
+          </div>
+        );
       case "Environmental Themes":
-        return <div onClick={() => navigate("/environmental")}>{tabName}</div>;
+        return (
+          <div className="nav-item" onClick={() => navigate("/environmental")}>
+            {tabName}
+          </div>
+        );
       case "How to Buy NFT":
-        return <div onClick={() => navigate("/buy-nft")}>{tabName}</div>;
+        return (
+          <div className="nav-item" onClick={() => navigate("/buy-nft")}>
+            {tabName}
+          </div>
+        );
 
       default:
-        return <div>{tabName}</div>;
+        return <div className="nav-item">{tabName}</div>;
     }
   };
 

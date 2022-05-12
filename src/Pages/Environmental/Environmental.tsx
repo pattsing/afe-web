@@ -9,6 +9,7 @@ import plastic from "../../Assets/plastic.mp4";
 import people from "../../Assets/people.mp4";
 import consumer from "../../Assets/consumer.mp4";
 import fire from "../../Assets/fire.mp4";
+import Footer from "../../Components/Footer/Footer";
 
 const Environmental = () => {
   const trans = translation.Environmental;
@@ -100,6 +101,7 @@ const Environmental = () => {
           </Container>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

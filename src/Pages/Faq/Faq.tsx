@@ -9,6 +9,7 @@ import faqData from "../../Data/FAQData.json";
 import NewNavBar from "../../Components/NewNavBar/NewNavBar";
 
 import "./Faq.css";
+import Footer from "../../Components/Footer/Footer";
 
 const Faq = () => {
   const trans = translation.FaqPage;
@@ -62,6 +63,7 @@ const Faq = () => {
           </div>
         </div>
       </Container>
+      <Footer></Footer>
     </div>
   );
 };

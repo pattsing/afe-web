@@ -10,6 +10,7 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 import Card from "@mui/material/Card";
+import Footer from "../../Components/Footer/Footer";
 
 export default function Artworks() {
   const trans = translation.ArtWorks;
@@ -58,6 +59,7 @@ export default function Artworks() {
           </div>
         </Container>
       </div>
+      <Footer></Footer>
     </div>
   );
 }

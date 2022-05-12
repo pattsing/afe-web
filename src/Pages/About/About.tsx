@@ -6,6 +6,7 @@ import jorn from "../../Assets/jorn.jpeg";
 import derek from "../../Assets/derek.jpeg";
 import mild from "../../Assets/mild.jpeg";
 import NewNavBar from "../../Components/NewNavBar/NewNavBar";
+import Footer from "../../Components/Footer/Footer";
 
 const About = () => {
   const trans = translation.AboutPage;
@@ -44,6 +45,7 @@ const About = () => {
           </div>
         </Container>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

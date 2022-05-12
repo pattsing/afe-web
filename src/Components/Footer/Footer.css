@@ -1,5 +1,4 @@
 .footer {
-    display: flex;
     flex: 1;
     padding: 1rem 0;
     border-top: 1px solid #000000;
@@ -11,13 +10,6 @@
     font-size: 14px;
     text-align: center;
     color: rgb(0, 0, 0);
-  }
-  
-  .footer a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
   }
   
   .logo {

@@ -158,8 +158,7 @@ const NewLanding = () => {
           </div>
         </Container>
       </div>
-      {/* <Faq /> */}
-      {/* <About /> */}
+      <div style={{ height: "5vw" }}></div>
       <Footer></Footer>
     </div>
   );

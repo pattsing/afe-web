@@ -1,36 +1,40 @@
-import logo from "../../Assets/afelogo-white-nobg.png"
-import "./Footer.css"
-import { useState, useEffect } from "react"
+import logo from "../../Assets/afelogo-black-nobg.png";
+import "./Footer.css";
+import { useState, useEffect } from "react";
 
 function Footer() {
-  const [width, setWindowWidth] = useState(0)
+  const [width, setWindowWidth] = useState(0);
 
-  useEffect(() => { 
-
+  useEffect(() => {
     updateDimensions();
 
-    window.addEventListener('resize', updateDimensions);
-    return () => 
-      window.removeEventListener('resize',updateDimensions);
-   }, [])
+    window.addEventListener("resize", updateDimensions);
+    return () => window.removeEventListener("resize", updateDimensions);
+  }, []);
 
-const updateDimensions = () => {
-  const width = window.innerWidth
-  setWindowWidth(width)
-}
+  const updateDimensions = () => {
+    const width = window.innerWidth;
+    setWindowWidth(width);
+  };
 
-const logoImage = () => {
-  if (width > 425) {
-    return <img src={logo} alt="afe-logo" className="logo" />
-  }
-}
+  const logoImage = () => {
+    if (width > 425) {
+      return <img src={logo} alt="afe-logo" className="logo" />;
+    }
+  };
 
   return (
-    <footer className="footer">
-    Copyright ©2022 Art for environment NFT. All Right Reserved
+    <div className="footer">
       {logoImage()}
-  </footer>
-)
+      <div>Copyright ©2022 AFE-NFT. All Right Reserved</div>
+      <div>Contact us: info@afe-nft.com</div>
+      <div>
+        <a href={"www.google.com"} style={{ color: "black" }}>
+          Privacy Policy
+        </a>
+      </div>
+    </div>
+  );
 }
 
 export default Footer;

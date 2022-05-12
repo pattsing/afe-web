@@ -73,3 +73,11 @@
 .menuNav.showMenu {
   width: 100%;
 }
+
+.nav-item {
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  color: darkolivegreen;
+}
