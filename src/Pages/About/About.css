@@ -13,6 +13,12 @@
   background-color: #000000;
 }
 
+.about-wrapper-mobile {
+  padding-top: 20vw;
+  font-family: "Hind", sans-serif;
+  background-color: #000000;
+}
+
 .about-wrapper .title {
   color: #ffffff;
   text-align: center;
@@ -24,6 +30,12 @@
   color: #ffffff;
   text-align: center;
   font-size: 1.25vw;
+}
+
+.about-wrapper-mobile .desc {
+  color: #ffffff;
+  text-align: center;
+  font-size: 3vw;
 }
 
 .desc {
@@ -79,4 +91,21 @@
   border-radius: 50%;
   width: 7vw;
   height: 7vw;
+}
+
+.avatar-mobile {
+  border-radius: 50%;
+  width: 15vw;
+  height: 15vw;
+}
+
+.team-content-wrapper {
+  height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #ffffff;
+    margin-bottom: 10vw;
 }
