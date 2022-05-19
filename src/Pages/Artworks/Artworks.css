@@ -21,11 +21,18 @@
 
 .art-title {
     font-size: 1.5vw;
-    
+}
+
+.art-title-mobile {
+    font-size: 3vw;
 }
 
 .art-artist {
     font-size: 1vw;
+}
+
+.art-artist-mobile {
+    font-size: 2vw;
 }
 
 .art-list {

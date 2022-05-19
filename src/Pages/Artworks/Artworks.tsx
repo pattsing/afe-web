@@ -6,13 +6,16 @@ import translation from "../../Locals/en.json";
 import logo_white from "../../Assets/only-a-logo-white-nobg.png";
 import mother_of_earth from "../../Assets/mother_of_earth.png";
 import mother_of_rice from "../../Assets/mother_of_rice.png";
-import ImageList from "@mui/material/ImageList";
-import ImageListItem from "@mui/material/ImageListItem";
-import ImageListItemBar from "@mui/material/ImageListItemBar";
 import Card from "@mui/material/Card";
 import Footer from "../../Components/Footer/Footer";
+import { useMediaQuery } from "react-responsive";
 
 export default function Artworks() {
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-width: 768px)",
+  });
+  const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
+
   const trans = translation.ArtWorks;
   const imageData = [
     {
@@ -29,13 +32,20 @@ export default function Artworks() {
   return (
     <div className="art-wrapper">
       <NewNavBar />
-      <div className="landing-banner">
+      <div className={isMobile ? "landing-banner-mobile" : "landing-banner"}>
         <Container>
           <div>
             <div>
-              <div className="banner-quote">{trans.title}</div>
+              <div
+                className={isMobile ? "banner-quote-mobile" : "banner-quote"}
+              >
+                {trans.title}
+              </div>
             </div>
-            <img className="banner-bg" src={logo_white}></img>
+            <img
+              className={isMobile ? "banner-bg-mobile" : "banner-bg"}
+              src={logo_white}
+            ></img>
           </div>
         </Container>
       </div>
@@ -51,8 +61,14 @@ export default function Artworks() {
                   loading="lazy"
                 />
                 <div className="info-wrapper">
-                  <div className="art-title">{item.title.toUpperCase()}</div>
-                  <div className="art-artist">{item.artist}</div>
+                  <div className={isMobile ? "art-title-mobile" : "art-title"}>
+                    {item.title.toUpperCase()}
+                  </div>
+                  <div
+                    className={isMobile ? "art-artist-mobile" : "art-artist"}
+                  >
+                    {item.artist}
+                  </div>
                 </div>
               </Card>
             ))}
