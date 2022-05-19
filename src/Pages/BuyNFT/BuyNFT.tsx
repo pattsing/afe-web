@@ -14,18 +14,23 @@ import deposit from "../../Assets/Howtobuy/deposit.png";
 import eth from "../../Assets/Howtobuy/ethereum.png";
 import oslogo from "../../Assets/Howtobuy/oslogo.png";
 import Footer from "../../Components/Footer/Footer";
+import { useMediaQuery } from "react-responsive";
 
 const BuyNFT = () => {
+  const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
   const trans = translation.HowToBuyNFTPage;
   return (
     <div>
       <NewNavBar></NewNavBar>
       <Container>
-        <div className="buyNFT-wrapper" id="buyNFT">
+        <div
+          className={isMobile ? "buyNFT-wrapper-mobile" : "buyNFT-wrapper"}
+          id="buyNFT"
+        >
           <div className="title">{trans.title}</div>
           <div className="desc">{trans.pageDecs}</div>
           <div className="step-title">{trans.step.title}</div>
-          <Card className="card-step">
+          <Card className={isMobile ? "card-step-mobile" : "card-step"}>
             <div style={{ backgroundColor: "rgb(249,185,46)" }}>1</div>
             <div className="content-wrapper">
               <div>{trans.step.step1}</div>
@@ -37,7 +42,7 @@ const BuyNFT = () => {
               </div>
             </div>
           </Card>
-          <Card className="card-step">
+          <Card className={isMobile ? "card-step-mobile" : "card-step"}>
             <div style={{ backgroundColor: "rgb(190,157,51)" }}>2</div>
             <div className="content-wrapper">
               <div id="card-step-details-single">
@@ -46,7 +51,7 @@ const BuyNFT = () => {
               <div>{trans.step.step2}</div>
             </div>
           </Card>
-          <Card className="card-step">
+          <Card className={isMobile ? "card-step-mobile" : "card-step"}>
             <div style={{ backgroundColor: "rgb(93,110,60)" }}>3</div>
             <div className="content-wrapper">
               <div>{trans.step.step3}</div>
@@ -55,7 +60,7 @@ const BuyNFT = () => {
               </div>
             </div>
           </Card>
-          <Card className="card-step">
+          <Card className={isMobile ? "card-step-mobile" : "card-step"}>
             <div style={{ backgroundColor: "rgb(51,86,67)" }}>4</div>
             <div className="content-wrapper">
               <div id="card-step-details-single">
@@ -64,7 +69,7 @@ const BuyNFT = () => {
               <div>{trans.step.step4}</div>
             </div>
           </Card>
-          <Card className="card-step">
+          <Card className={isMobile ? "card-step-mobile" : "card-step"}>
             <div style={{ backgroundColor: "rgb(35,73,77)" }}>5</div>
             <div className="content-wrapper">
               <div>{trans.step.step5}</div>
@@ -73,7 +78,7 @@ const BuyNFT = () => {
               </div>
             </div>
           </Card>
-          <Card className="card-step">
+          <Card className={isMobile ? "card-step-mobile" : "card-step"}>
             <div style={{ backgroundColor: "rgb(21,60,67)" }}>6</div>
             <div className="content-wrapper">
               <div id="card-step-details-single">
@@ -82,7 +87,7 @@ const BuyNFT = () => {
               <div>{trans.step.step6}</div>
             </div>
           </Card>
-          <Card className="card-step">
+          <Card className={isMobile ? "card-step-mobile" : "card-step"}>
             <div style={{ backgroundColor: "rgb(5,45,97)" }}>7</div>
             <div className="content-wrapper">
               <div>{trans.step.step7}</div>
