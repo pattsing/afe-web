@@ -10,8 +10,10 @@ import people from "../../Assets/people.mp4";
 import consumer from "../../Assets/consumer.mp4";
 import fire from "../../Assets/fire.mp4";
 import Footer from "../../Components/Footer/Footer";
+import { useMediaQuery } from "react-responsive";
 
 const Environmental = () => {
+  const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
   const trans = translation.Environmental;
   return (
     <div>
@@ -27,15 +29,25 @@ const Environmental = () => {
             </div>
           </Container>
         </div> */}
-        <div className="content-black">
+        <div className={isMobile ? "content-black-mobile" : "content-black"}>
           <Container className="content-container">
             <div className="black-wrapper">
               <video className="fire-video" autoPlay muted loop>
                 <source src={fire} type="video/mp4"></source>
               </video>
               <div className="morther-wrapper">
-                <div className="morther-title">{trans.worldTitle}</div>
-                <div className="morther-desc">{trans.worldDesc}</div>
+                <div
+                  className={
+                    isMobile ? "morther-title-mobile" : "morther-title"
+                  }
+                >
+                  {trans.worldTitle}
+                </div>
+                <div
+                  className={isMobile ? "morther-desc-mobile" : "morther-desc"}
+                >
+                  {trans.worldDesc}
+                </div>
               </div>
             </div>
           </Container>
@@ -44,7 +56,9 @@ const Environmental = () => {
           <Container className="content-container">
             <div className="white-wrapper">
               <div>
-                <div className="title">{trans.climateChange}</div>
+                <div className={isMobile ? "title-mobile" : "title"}>
+                  {trans.climateChange}
+                </div>
               </div>
               <video className="video" autoPlay muted loop>
                 <source src={iceMelt} type="video/mp4"></source>
@@ -59,7 +73,9 @@ const Environmental = () => {
                 <source src={forestCut} type="video/mp4"></source>
               </video>
               <div>
-                <div className="title">{trans.biodiversity}</div>
+                <div className={isMobile ? "title-mobile" : "title"}>
+                  {trans.biodiversity}
+                </div>
               </div>
             </div>
           </Container>
@@ -68,7 +84,9 @@ const Environmental = () => {
           <Container className="content-container">
             <div className="white-wrapper">
               <div>
-                <div className="title">{trans.plastic}</div>
+                <div className={isMobile ? "title-mobile" : "title"}>
+                  {trans.plastic}
+                </div>
               </div>
               <video className="video" autoPlay muted loop>
                 <source src={plastic} type="video/mp4"></source>
@@ -83,7 +101,9 @@ const Environmental = () => {
                 <source src={people} type="video/mp4"></source>
               </video>
               <div>
-                <div className="title">{trans.population}</div>
+                <div className={isMobile ? "title-mobile" : "title"}>
+                  {trans.population}
+                </div>
               </div>
             </div>
           </Container>
@@ -92,7 +112,9 @@ const Environmental = () => {
           <Container className="content-container">
             <div className="white-wrapper">
               <div>
-                <div className="title">{trans.consumer}</div>
+                <div className={isMobile ? "title-mobile" : "title"}>
+                  {trans.consumer}
+                </div>
               </div>
               <video className="video" autoPlay muted loop>
                 <source src={consumer} type="video/mp4"></source>

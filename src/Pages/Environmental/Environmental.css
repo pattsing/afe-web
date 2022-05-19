@@ -3,6 +3,12 @@
     background-color: rgba(0, 0, 0, 0.92);
   }
 
+  .content-black-mobile {
+    height: 35vw;
+    background-color: rgba(0, 0, 0, 0.92);
+    margin-top: 12.5vw;
+  }
+
   .content-white {
     height: 35vw;
   }
@@ -44,6 +50,11 @@
   .title {
       font-size: 1.5vw;
   }
+
+  .title-mobile {
+    font-size: 3vw;
+}
+
   .morther-wrapper {
     margin-left: 3vw;
   }
@@ -55,4 +66,13 @@
   .morther-desc {
     margin-top: 1vw;
     font-size: 1vw;
+  }
+
+  .morther-title-mobile {
+    font-size: 3vw;
+  }
+  
+  .morther-desc-mobile {
+    margin-top: 1vw;
+    font-size: 2vw;
   }
