@@ -7,11 +7,13 @@ import { SyntheticEvent, useState } from "react";
 import translation from "../../Locals/en.json";
 import faqData from "../../Data/FAQData.json";
 import NewNavBar from "../../Components/NewNavBar/NewNavBar";
+import { useMediaQuery } from "react-responsive";
 
 import "./Faq.css";
 import Footer from "../../Components/Footer/Footer";
 
 const Faq = () => {
+  const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
   const trans = translation.FaqPage;
   const [expanded, setExpanded] = useState<string | false>(false);
   const handleChange =
@@ -23,7 +25,10 @@ const Faq = () => {
     <div>
       <NewNavBar></NewNavBar>
       <Container>
-        <div className="faq-wrapper" id="faq">
+        <div
+          className={isMobile ? "faq-wrapper-mobile" : "faq-wrapper"}
+          id="faq"
+        >
           <div className="title">{trans.title}</div>
           <div className="list">
             {faqData.map((faq, index) => {
@@ -38,7 +43,7 @@ const Faq = () => {
                     id={`faq-question-${index}`}
                     style={{
                       fontFamily: `"Hind", sans-serif`,
-                      fontSize: "1vw",
+                      fontSize: isMobile ? "3vw" : "1vw",
                       fontWeight: 600,
                     }}
                   >
@@ -47,7 +52,7 @@ const Faq = () => {
                   <AccordionDetails
                     style={{
                       fontFamily: `"Hind", sans-serif`,
-                      fontSize: "1vw",
+                      fontSize: isMobile ? "3vw" : "1vw",
                     }}
                   >
                     {faq.answer.map((answer) => {
