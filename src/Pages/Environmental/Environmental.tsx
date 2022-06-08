@@ -19,22 +19,18 @@ const Environmental = () => {
     <div>
       <NewNavBar></NewNavBar>
       <div className="page-wrapper">
-        {/* <div className="landing-banner">
-          <Container>
-            <div>
-              <div>
-                <div className="banner-quote">{trans.title}</div>
-              </div>
-              <img className="banner-bg" src={logo_white}></img>
-            </div>
-          </Container>
-        </div> */}
         <div className={isMobile ? "content-black-mobile" : "content-black"}>
           <Container className="content-container">
             <div className="black-wrapper">
-              <video className="fire-video" autoPlay muted loop>
-                <source src={fire} type="video/mp4"></source>
-              </video>
+              {isMobile ? (
+                <video className="fire-video" muted loop>
+                  <source src={fire} type="video/mp4"></source>
+                </video>
+              ) : (
+                <video className="fire-video" autoPlay muted loop>
+                  <source src={fire} type="video/mp4"></source>
+                </video>
+              )}
               <div className="morther-wrapper">
                 <div
                   className={
@@ -60,18 +56,30 @@ const Environmental = () => {
                   {trans.climateChange}
                 </div>
               </div>
-              <video className="video" autoPlay muted loop>
-                <source src={iceMelt} type="video/mp4"></source>
-              </video>
+              {isMobile ? (
+                <video className="video" muted loop>
+                  <source src={iceMelt} type="video/mp4"></source>
+                </video>
+              ) : (
+                <video className="video" autoPlay muted loop>
+                  <source src={iceMelt} type="video/mp4"></source>
+                </video>
+              )}
             </div>
           </Container>
         </div>
         <div className="content-black">
           <Container className="content-container">
             <div className="black-wrapper">
-              <video className="video" autoPlay muted loop>
-                <source src={forestCut} type="video/mp4"></source>
-              </video>
+              {isMobile ? (
+                <video className="video" muted loop>
+                  <source src={forestCut} type="video/mp4"></source>
+                </video>
+              ) : (
+                <video className="video" autoPlay muted loop>
+                  <source src={forestCut} type="video/mp4"></source>
+                </video>
+              )}
               <div>
                 <div className={isMobile ? "title-mobile" : "title"}>
                   {trans.biodiversity}
@@ -88,18 +96,30 @@ const Environmental = () => {
                   {trans.plastic}
                 </div>
               </div>
-              <video className="video" autoPlay muted loop>
-                <source src={plastic} type="video/mp4"></source>
-              </video>
+              {isMobile ? (
+                <video className="video" muted loop>
+                  <source src={plastic} type="video/mp4"></source>
+                </video>
+              ) : (
+                <video className="video" autoPlay muted loop>
+                  <source src={plastic} type="video/mp4"></source>
+                </video>
+              )}
             </div>
           </Container>
         </div>
         <div className="content-black">
           <Container className="content-container">
             <div className="black-wrapper">
-              <video className="video" autoPlay muted loop>
-                <source src={people} type="video/mp4"></source>
-              </video>
+              {isMobile ? (
+                <video className="video" muted loop>
+                  <source src={people} type="video/mp4"></source>
+                </video>
+              ) : (
+                <video className="video" autoPlay muted loop>
+                  <source src={people} type="video/mp4"></source>
+                </video>
+              )}
               <div>
                 <div className={isMobile ? "title-mobile" : "title"}>
                   {trans.population}
@@ -116,9 +136,15 @@ const Environmental = () => {
                   {trans.consumer}
                 </div>
               </div>
-              <video className="video" autoPlay muted loop>
-                <source src={consumer} type="video/mp4"></source>
-              </video>
+              {isMobile ? (
+                <video className="video" muted loop>
+                  <source src={consumer} type="video/mp4"></source>
+                </video>
+              ) : (
+                <video className="video" autoPlay muted loop>
+                  <source src={consumer} type="video/mp4"></source>
+                </video>
+              )}
             </div>
           </Container>
         </div>
