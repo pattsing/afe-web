@@ -6,6 +6,7 @@ import translation from "../../Locals/en.json";
 import logo_white from "../../Assets/only-a-logo-white-nobg.png";
 import mother_of_earth from "../../Assets/mother_of_earth.png";
 import mother_of_rice from "../../Assets/mother_of_rice.png";
+import NFT_AG_Covid from "../../Assets/NFT_AG_Covid.png";
 import Card from "@mui/material/Card";
 import Footer from "../../Components/Footer/Footer";
 import { useMediaQuery } from "react-responsive";
@@ -27,6 +28,11 @@ export default function Artworks() {
       img: mother_of_earth,
       title: "Mother of earth",
       artist: "Vasan",
+    },
+    {
+      img: NFT_AG_Covid,
+      title: "The Battle of Rostam vs The Covid Monster",
+      artist: "Arash Groyan",
     },
   ];
   return (

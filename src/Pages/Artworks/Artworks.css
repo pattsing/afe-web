@@ -11,7 +11,7 @@
     padding: 2vw 3vw;
     margin: 3vw;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-evenly;
 }
 
 .art-img {
@@ -20,18 +20,22 @@
 }
 
 .art-title {
+    text-align: left;
     font-size: 1.5vw;
 }
 
 .art-title-mobile {
+    text-align: center;
     font-size: 3vw;
 }
 
 .art-artist {
+    text-align: initial;
     font-size: 1vw;
 }
 
 .art-artist-mobile {
+    text-align: center;
     font-size: 2vw;
 }
 
