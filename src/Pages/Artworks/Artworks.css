@@ -7,6 +7,7 @@
 }
 
 .card-wrapper {
+    width: 20vw;
     display: flex;
     padding: 2vw 3vw;
     margin: 3vw;
@@ -41,7 +42,7 @@
 
 .art-list {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .info-wrapper {
