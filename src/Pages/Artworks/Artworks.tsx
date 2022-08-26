@@ -56,30 +56,26 @@ export default function Artworks() {
         </Container>
       </div>
       <div>
-        <Container>
-          <div className="art-list">
-            {imageData.map((item) => (
-              <Card className="card-wrapper">
-                <img
-                  className="art-img"
-                  src={item.img}
-                  alt={item.title}
-                  loading="lazy"
-                />
-                <div className="info-wrapper">
-                  <div className={isMobile ? "art-title-mobile" : "art-title"}>
-                    {item.title.toUpperCase()}
-                  </div>
-                  <div
-                    className={isMobile ? "art-artist-mobile" : "art-artist"}
-                  >
-                    {item.artist}
-                  </div>
+        <div className="art-list">
+          {imageData.map((item) => (
+            <Card className="card-wrapper">
+              <img
+                className="art-img"
+                src={item.img}
+                alt={item.title}
+                loading="lazy"
+              />
+              <div className="info-wrapper">
+                <div className={isMobile ? "art-title-mobile" : "art-title"}>
+                  {item.title.toUpperCase()}
                 </div>
-              </Card>
-            ))}
-          </div>
-        </Container>
+                <div className={isMobile ? "art-artist-mobile" : "art-artist"}>
+                  {item.artist}
+                </div>
+              </div>
+            </Card>
+          ))}
+        </div>
       </div>
       <Footer></Footer>
     </div>
