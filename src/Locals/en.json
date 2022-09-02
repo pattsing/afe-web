@@ -6,9 +6,9 @@
     "worldTitle": "MOTHER EARTH NEEDS YOUR HELP!",
     "worldDesc": "With the fallout from climate change and mass extinctions looming, Mother Earth is slipping away right under our noses. Art for Environment – NFT (AFE-NFT) aims to slow her decay by becoming a vehicle for aiding her recovery.",
     "nftTitle": "WHAT IS AFE-NFT?",
-    "nftDesc": "AFE-NFT features an online collection of high-quality artworks that poignantly addresses current and pressing environmental issues. Minted as single or limited edition NFTs (Non-Fungible Tokens) and stored as ERC-721 tokens, these artworks by renowned artists can be bought and safely accessed through your online ‘wallet’. Each limited edition contains three (3) tokens of the same artwork, all priced in Ether. Twenty percent of our proceeds will be donated to several environmental charities, including the Rainforest Foundation US (RFUS). The remaining balance will be equally divided between the artist and the project.",
+    "nftDesc": "AFE-NFT features an online collection of high-quality artworks that poignantly addresses current and pressing environmental issues. Minted as unique pieces NFTs (Non-Fungible Tokens) and stored as ERC-721 tokens, these artworks by renowned artists can be bought and safely accessed through your online ‘wallet’. all priced in Ether. Twenty percent of our proceeds will be donated to environmental charities, including the Rainforest Foundation US (RFUS).",
     "sourceTitle": "SOURCE OF ART",
-    "sourceDesc": "The environmental artworks on AFE-NFT have been meticulously curated from Southeast Asia and elsewhere around the globe. The pieces on display were created by celebrated artists, whose works have been sold at international auction houses and recognized worldwide in numerous art exhibitions, museums and biennales. Their originals were conceived in a variety of media, such as paintings, prints, art installations, video stills, and photography among others."
+    "sourceDesc": "The environmental artworks on AFE-NFT have been meticulously curated from Southeast Asia and elsewhere around the globe. The pieces on display were created by celebrated artists, whose works have been sold at international auction houses and recognized worldwide in numerous art exhibitions, museums and biennales. Their originals were conceived in a variety of media, such as paintings, prints, art installations, and photography among others."
   },
   "HowToBuyNFTPage": {
     "title": "How to Buy NFTs",
@@ -21,7 +21,8 @@
       "step4": "Deposit cash from your linked bank account into your registered account on the cryptocurrency exchange app.",
       "step5": "Place an order for Ether using your deposited cash and store your Ether in your digital wallet.",
       "step6": "Go to OpenSea, open an account and link your digital wallet to the platform.",
-      "step7": "Find the NFT in question and then use your Ether currency in your digital wallet to buy the NFT. The purchased NFT will be stored in your digital wallet."
+      "step7": "Find the NFT in question and then use your Ether currency in your digital wallet to buy the NFT. The purchased NFT will be stored in your digital wallet.",
+      "step8": "Please contact us for assistance if you need help to set up your account."
     }
   },
   "FaqPage": {
@@ -46,7 +47,7 @@
     "biodiversity": "BIODIVERSITY LOSS",
     "plastic": "PLASTIC POLLUTION",
     "population": "POPULATION GROWTH",
-    "consumer": "CONSUMER ECONOMY"
+    "consumer": "CONSUMERISM"
   },
 
   "ArtWorks": {

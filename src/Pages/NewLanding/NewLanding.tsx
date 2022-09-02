@@ -10,8 +10,8 @@ import { useNavigate } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 
 import logo_white from "../../Assets/only-a-logo-white-nobg.png";
-import logo_can from "../../Assets/canlogo.jpeg";
-import logo_wwf from "../../Assets/wwflogo.jpeg";
+import logo_rfus_back from "../../Assets/RFUS_vertical_greenonblack_RGB.jpeg";
+import logo_rfus from "../../Assets/rfus_logo.png";
 import mother_of_earth from "../../Assets/mother_of_earth.png";
 import mother_of_rice from "../../Assets/mother_of_rice.png";
 import AFEButton from "../../Components/AFEButton/AFEButton";
@@ -103,7 +103,7 @@ const NewLanding = () => {
                     color: "#000000",
                   }}
                 >
-                  0x0e5c6b92196a5C7C0CB913e955335a407F3b50fA
+                  TBA
                 </a>
               </div>
 
@@ -121,7 +121,7 @@ const NewLanding = () => {
             </div>
             <div className={isMobile ? "nft-img-mobile" : "nft-img"}>
               <Card className="card">
-                <img src={logo_wwf} />
+                <img src={logo_rfus_back} />
               </Card>
             </div>
           </div>

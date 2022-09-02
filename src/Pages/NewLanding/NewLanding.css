@@ -219,11 +219,13 @@
 }
 
 .nft-img .card {
-  width: 40%;
+  width: 60%;
+  background-color: black;
 }
 
 .nft-img-mobile .card {
-  width: 50%;
+  width: 60%;
+  background-color: black;
 }
 
 .nft-img .card > img,  .nft-img-mobile .card > img{
