@@ -39,21 +39,17 @@ export default function Artworks() {
     <div className="art-wrapper">
       <NewNavBar />
       <div className={isMobile ? "landing-banner-mobile" : "landing-banner"}>
-        <Container>
+        <div>
           <div>
-            <div>
-              <div
-                className={isMobile ? "banner-quote-mobile" : "banner-quote"}
-              >
-                {trans.title}
-              </div>
+            <div className={isMobile ? "banner-quote-mobile" : "banner-quote"}>
+              {trans.title}
             </div>
-            <img
-              className={isMobile ? "banner-bg-mobile" : "banner-bg"}
-              src={logo_white}
-            ></img>
           </div>
-        </Container>
+          <img
+            className={isMobile ? "banner-bg-mobile" : "banner-bg"}
+            src={logo_white}
+          ></img>
+        </div>
       </div>
       <div>
         <div className="art-list">
