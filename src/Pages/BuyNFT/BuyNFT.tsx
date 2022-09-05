@@ -93,12 +93,7 @@ const BuyNFT = () => {
               <div>{trans.step.step7}</div>
             </div>
           </Card>
-          <Card className={isMobile ? "card-step-mobile" : "card-step"}>
-            <div style={{ backgroundColor: "rgb(1,28,100)" }}>8</div>
-            <div className="content-wrapper">
-              <div>{trans.step.step8}</div>
-            </div>
-          </Card>
+          <div className="desc">{trans.contact}</div>
         </div>
       </Container>
       <Footer></Footer>

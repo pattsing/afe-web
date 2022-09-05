@@ -1,77 +1,100 @@
 [
-    {
-        "question": "What is a NFT?",
-        "answer": ["A non-fungible token (NFT) is a non-interchangeable unit of data stored on a blockchain, a form of digital ledger, which can be bought, sold and traded online. Transactions involving NFTs are frequently executed with cryptocurrency, and they are generally encoded with the same underlying software as many cryptos. Types of NFT data units may be associated with digital files, representing real-world objects like art, music, in-game items and videos. They are bought and sold online, frequently with cryptocurrency, and they are generally encoded with the same underlying software as many cryptos."],
-        "link": "https://en.wikipedia.org/wiki/Non-fungible_token"
-    },
-    {
-        "question": "What is blockchain?",
-        "answer": ["A blockchain is essentially a digital ledger of transactions that is duplicated and distributed across the entire network of computer systems on the blockchain. Each block in the chain contains a number of transactions, and every time a new transaction occurs on the blockchain, a record of that transaction is added to every participant's ledger. Such a system records information in a way that makes it difficult or near impossible to change, hack, or cheat the system."],
-        "link": "https://www.investopedia.com/terms/b/blockchain.asp"
-    },
-    {
-        "question": "What is a cryptocurrency?",
-        "answer": ["A cryptocurrency is an encrypted data string that denotes a unit of currency. It is monitored and organized by a peer-to-peer network called a blockchain, which also serves as a secure ledger of transactions. Major cryptocurrencies include Ether, Bitcoin, Litecoin, and Monero among others."],
-        "link": "https://www.investopedia.com/terms/c/cryptocurrency.asp"
-    },
-    {
-        "question": "What is Ethereum and Ether?",
-        "answer": ["Launched in July 2015, Ethereum is a decentralized, open-source blockchain with smart contract functionality. Ether (ETH) is the native cryptocurrency of the platform and often used in NFT-related transactions."],
-        "link": "https://www.investopedia.com/tech/what-ether-it-same-ethereum/"
-    },
-    {
-        "question": "What is a digital or cryptocurrency wallet?",
-        "answer": ["A digital wallet (or e-wallet) is a software-based system that securely stores users' payment information and passwords for numerous payment methods and websites. For this reason, digital wallets act as financial accounts that permit users to store funds, make transactions, and track payment histories by computer. Such characteristics further allow digital wallets to become the main interface for using cryptocurrencies, like Ether and Bitcoin."],
-        "link": "https://www.investopedia.com/terms/d/digital-wallet.asp"
-    },
-    {
-        "question": "What is a smart contract?",
-        "answer": ["A smart contract is a self-executing contract with the terms of the agreement between buyer and seller being directly written into lines of code. The agreements and code contained therein exist across a distributed and decentralized blockchain network. The code controls the execution, and transactions are trackable and irreversible."],
-        "link": "https://www.ibm.com/topics/smart-contracts"
-    },
-    {
-        "question": "Is Ether secure?",
-        "answer": ["Cryptocurrencies, including Ether and Bitcoin, are generally secure. The main threat to regular clients is phishing, i.e. you are tricked by email or through other means to give away your access code(s) or click on a link that is not secure. It may be safest to write down your password details using pen and paper, after which they should be stored in a secure place."],
-        "link": "https://ethereum.org/en/security/"
-    },
-    {
-        "question": "Is Ether stable?",
-        "answer": ["No, the exchange rate between Ether and USD, as well as other currencies, fluctuates.  When you buy the NFT, you will need to pay for it in Ether. The Ether may go up or down in the future, creating gains or losses. It is possible to convert Ether to Stablecoin which is a cryptocurrency without the volatility."],
-        "link": "https://ethereum.org/en/stablecoins/"
-    },
-    {
-        "question": "How can I convert cash into Ether?",
-        "answer": ["Step 1: Download and register on a cryptocurrency exchange app, the most accessible being Binance, Zipmex, Bitkub and Coinbase.",
-            "Step 2: Connect your bank account to the cryptocurrency exchange app.",
-            "Step 3: Deposit cash from your linked bank account into your registered account on the cryptocurrency exchange app.",
-            "Step 4: Place an order for Ether using your deposited cash and store your Ether in your digital wallet, such as MetaMask.",
-            "Please refer to the 'How to Buy NFTs' section on this website for further details."],
-            "link": "https://afe-nft.com/buy-nft"
-            
-    },
-    {
-        "question": "How can I convert Ether into cash?",
-        "answer": ["Step 1: Transfer your Ether from your digital wallet, e.g. MetaMask, to your cryptocurrency exchange app, like Binance, Zipmex, Bitkub or Coinbase.",
-            "Step 2: Connect your bank account to the cryptocurrency exchange app, if not already linked.",
-            "Step 3: Sell your Ether against a preferred currency.",
-            "Step 4: Transfer your money from the cryptocurrency exchange app to your bank account. Please note that doing so will be subject to a transaction fee, as set by the app developers.",
-            "Please refer to the 'How to Buy NFTs' section on this website for further details."],
-            "link": "https://www.stilt.com/blog/2021/07/how-to-cash-out-ethereum/"
-    },
-    {
-        "question": "Can I resell my NFT?",
-        "answer": ["Yes, you can resell it at any time and at any price you deem appropriate. Please note that the smart contract, written into each NFT, will automatically transfer 5% of your resale proceeds to the artist and the project. This means that you, the seller, will retain 95% of the sticker price on your NFT."]
-    },
-    {
-        "question": "Will I own the copyright on my NFT?",
-        "answer": ["Unless your NFT's smart contract says so, you will not own the copyright on your NFT. Buying an NFT does not in itself transfer copyright in the underlying work to the new owner of the NFT. The copyright, including the rights to reproduce, adapt or communicate such work to the public, would remain with the actual author or creator of the particular work, i.e the artist. This means NFT owners would only maintain a normal right of possession to the specific copy of the NFT, such as the right to be a property owner and the right to reap the benefits of that property, e.g. through resale or trade."],
-        "link": "https://www.jdsupra.com/legalnews/nfts-and-copyright-law-7361836/"
-    },
-    {
-        "question": "Does Ether have a high carbon footprint?",
-        "answer": ["Most cryptocurrencies have a high carbon footprint, due to the extensive use of electricity while being However, the annual global carbon footprint for Ether is less than half that of Bitcoin. In fact, Ether employs a unique and modified approach to mining, which appears to utilize less power.",
-            "Ethereum is in the process of switching from proof of work to proof of stake with a goal of slashing its energy use by 99 percent.",
-            " When new cryptocurrencies become widely available, we will take the necessary steps to list our prices in a cryptocurrency that possesses a lower carbon footprint."],
-            "link": "https://arstechnica.com/tech-policy/2022/03/bitcoins-massive-energy-use-faces-5m-shame-campaign-from-environmental-groups/"
-    }
+  {
+    "question": "What is an NFT?",
+    "answer": [
+      "A non-fungible token (NFT) is a non-interchangeable unit of data stored on a blockchain, a form of digital ledger, NFTs can be bought, sold and traded online. Transactions involving NFTs are frequently executed with cryptocurrency, and the tokens are generally encoded with the same underlying software as many cryptos. Types of NFT data units may be associated with digital files, representing real-world objects like art, music, in-game items and videos. They are bought and sold online, frequently with cryptocurrency, and they are generally encoded with the same underlying software as many cryptos."
+    ],
+    "link": "https://en.wikipedia.org/wiki/Non-fungible_token"
+  },
+  {
+    "question": "What is blockchain?",
+    "answer": [
+      "A blockchain is essentially a digital ledger of transactions that is duplicated and distributed across the entire network of computer systems on the blockchain. Each block in the chain contains a number of transactions, and every time a new transaction occurs on the blockchain, a record of that transaction is added to every participant's ledger. Such a system records information in a way that makes it difficult or near impossible to change, hack, or cheat the system."
+    ],
+    "link": "https://www.investopedia.com/terms/b/blockchain.asp"
+  },
+  {
+    "question": "What is a cryptocurrency?",
+    "answer": [
+      "A cryptocurrency is an encrypted data string that denotes a unit of currency. It is monitored and organized by a peer-to-peer network called a blockchain, which also serves as a secure ledger of transactions. Major cryptocurrencies include Ether, Bitcoin, Litecoin, and Monero among others."
+    ],
+    "link": "https://www.investopedia.com/terms/c/cryptocurrency.asp"
+  },
+  {
+    "question": "What is Ethereum and Ether?",
+    "answer": [
+      "Launched in July 2015, Ethereum is a decentralized, open-source blockchain with smart contract functionality. Ether (ETH) is the native cryptocurrency of the platform and often used in NFT-related transactions."
+    ],
+    "link": "https://www.investopedia.com/tech/what-ether-it-same-ethereum/"
+  },
+  {
+    "question": "What is a digital or cryptocurrency wallet?",
+    "answer": [
+      "A digital wallet (or e-wallet) is a software-based system that securely stores users' payment information and passwords for numerous payment methods and websites. For this reason, digital wallets act as financial accounts that permit users to store funds, make transactions, and track payment histories by computer. Such characteristics further allow digital wallets to become the main interface for using cryptocurrencies, like Ether and Bitcoin."
+    ],
+    "link": "https://www.investopedia.com/terms/d/digital-wallet.asp"
+  },
+  {
+    "question": "What is a smart contract?",
+    "answer": [
+      "A smart contract is a self-executing contract with the terms of the agreement between buyer and seller being directly written into lines of code. The agreements and code contained therein exist across a distributed and decentralized blockchain network. The code controls the execution, and transactions are trackable and irreversible."
+    ],
+    "link": "https://www.ibm.com/topics/smart-contracts"
+  },
+  {
+    "question": "Is Ether secure?",
+    "answer": [
+      "Cryptocurrencies, including Ether and Bitcoin, are generally secure. The main threat to regular clients is phishing, i.e. you are tricked by email or through other means to give away your access code(s) or click on a link that is not secure. It may be safest to write down your password details using pen and paper, after which they should be stored in a secure place."
+    ],
+    "link": "https://ethereum.org/en/security/"
+  },
+  {
+    "question": "Is Ether stable?",
+    "answer": [
+      "No, the exchange rate between Ether and USD, as well as other currencies, fluctuates.  When you buy the NFT, you will need to pay for it in Ether. The Ether may go up or down in the future, creating gains or losses. It is possible to convert Ether to Stablecoin which is a cryptocurrency with less volatility. Alternatively, you can convert Ether into cash using a cryptocurrency exchange app and withdraw the cash from the app to your bank account."
+    ],
+    "link": "https://ethereum.org/en/stablecoins/"
+  },
+  {
+    "question": "How can I convert cash into Ether?",
+    "answer": [
+      "Step 1: Download and register on a cryptocurrency exchange app, the most accessible being Binance, Zipmex, Bitkub and Coinbase.",
+      "Step 2: Connect your bank account to the cryptocurrency exchange app.",
+      "Step 3: Deposit cash from your linked bank account into your registered account on the cryptocurrency exchange app.",
+      "Step 4: Place an order for Ether using your deposited cash and store your Ether in your MetaMask wallet.",
+      "Please refer to the 'How to Buy NFTs' section on this website for further details."
+    ],
+    "link": "https://afe-nft.com/buy-nft"
+  },
+  {
+    "question": "How can I convert Ether into cash?",
+    "answer": [
+      "Step 1: Transfer your Ether from your digital wallet (MetaMask) to your cryptocurrency exchange app, like Binance, Zipmex, Bitkub or Coinbase.",
+      "Step 2: Connect your bank account to the cryptocurrency exchange app, if not already linked.",
+      "Step 3: Sell your Ether against a preferred currency.",
+      "Step 4: Transfer your money from the cryptocurrency exchange app to your bank account. Please note that doing so will be subject to a transaction fee, as set by the app developers.",
+      "Please refer to the 'How to Buy NFTs' section on this website for further details."
+    ],
+    "link": "https://www.stilt.com/blog/2021/07/how-to-cash-out-ethereum/"
+  },
+  {
+    "question": "Can I resell my NFT?",
+    "answer": [
+      "Yes, you can resell it at any time and at any price you deem appropriate. Please note that the smart contract, written into each NFT, will automatically transfer 5% of your resale proceeds to the artist and the project. This means that you, the seller, will retain 95% of the sticker price on your NFT."
+    ]
+  },
+  {
+    "question": "Will I own the copyright on my NFT?",
+    "answer": [
+      "Unless your NFT's smart contract says so, you will not own the copyright on your NFT. Buying an NFT does not in itself transfer the copyright in the underlying work to the new owner of the NFT. The copyright, including the rights to reproduce, adapt or distribute such work to the public, would remain with the actual author or creator of the underlying work, i.e. the artist. This means NFT owners would only maintain a normal right of possession to their specific copy of the NFT/NFTS, such as the right to be a property owner and the right to reap the benefits of that property, e.g. through resale or trade."
+    ],
+    "link": "https://www.jdsupra.com/legalnews/nfts-and-copyright-law-7361836/"
+  },
+  {
+    "question": "Does Ether have a high carbon footprint?",
+    "answer": [
+      "Most cryptocurrencies have a high carbon footprint, due to the extensive use of electricity. However, Ethereum is in the process of switching from proof-of-work (PoW) to proof-of-stake (PoS) with a goal of slashing its energy consumption by ~99.95%. To read more on the benefits that PoS have over PoW, please click on the link below. When new cryptocurrencies that possess lower carbon footprints become widely available, we will take the necessary steps to list our prices in those cryptocurrencies."
+    ],
+    "link": "https://zipmex.com/learn/pow-vs-pos"
+  }
 ]

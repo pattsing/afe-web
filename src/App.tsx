@@ -7,6 +7,7 @@ import Artworks from "./Pages/Artworks/Artworks";
 import Faq from "./Pages/Faq/Faq";
 import NewLanding from "./Pages/NewLanding/NewLanding";
 import Environmental from "./Pages/Environmental/Environmental";
+import Privacy from "./Pages/Privacy/Privacy";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="buy-nft" element={<BuyNFT />} />
       <Route path="faq" element={<Faq />} />
       <Route path="about" element={<About />} />
+      <Route path="privacy" element={<Privacy />} />
     </Routes>
   );
 }
