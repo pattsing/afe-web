@@ -94,11 +94,14 @@ const NewLanding = () => {
               />
             </div>
           </div>
-          <div className={isMobile ? "nft-img-mobile" : "nft-img"}>
+          <a
+            className={isMobile ? "nft-img-mobile" : "nft-img"}
+            href="https://rainforestfoundation.org/"
+          >
             <Card className="card">
               <img src={logo_rfus_back} />
             </Card>
-          </div>
+          </a>
         </div>
       </div>
       <div className={isMobile ? "content-world-mobile" : "content-world"}>

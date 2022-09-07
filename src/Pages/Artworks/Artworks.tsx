@@ -22,17 +22,12 @@ export default function Artworks() {
     {
       img: mother_of_rice,
       title: "Mother of rice",
-      artist: "Vasan",
+      artist: "Vasan Sitthiket",
     },
     {
       img: mother_of_earth,
       title: "Mother of earth",
-      artist: "Vasan",
-    },
-    {
-      img: NFT_AG_Covid,
-      title: "The Battle of Rostam vs The Covid Monster",
-      artist: "Arash Groyan",
+      artist: "Vasan Sitthiket",
     },
   ];
   return (

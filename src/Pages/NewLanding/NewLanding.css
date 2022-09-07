@@ -3,7 +3,6 @@
 }
 
 .landing-banner {
-  padding-left: 20vw;
   width: 100%;
   height: 20vw;
   background: linear-gradient(
@@ -21,7 +20,6 @@
 }
 
 .landing-banner-mobile {
-  padding-left: 5vw;
   width: 100%;
   height: 30vw;
   background: linear-gradient(
@@ -44,21 +42,25 @@
 }
 
 .banner-quote {
+  padding-left: 20vw;
   font-weight: 800;
   font-size: 2vw;
 }
 
 .banner-quote-mobile {
+  padding-left: 5vw;
   font-weight: 800;
   font-size: 5vw;
 }
 
 .banner-desc {
+  padding-left: 20vw;
   font-weight: 400;
   font-size: 1vw;
 }
 
 .banner-desc-mobile {
+  padding-left: 5vw;
   font-weight: 400;
   font-size: 3vw;
 }

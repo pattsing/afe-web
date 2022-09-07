@@ -31,7 +31,14 @@ function Footer() {
       <div>Copyright ©2022 AFE-NFT. All Right Reserved</div>
       <div>Contact us: info@afe-nft.com</div>
       <div>
-        <a style={{ color: "black" }} onClick={() => navigate("/privacy")}>
+        <a
+          style={{
+            color: "#000000",
+            cursor: "pointer",
+            textDecoration: "underline",
+          }}
+          onClick={() => navigate("/privacy")}
+        >
           Privacy Policy
         </a>
       </div>

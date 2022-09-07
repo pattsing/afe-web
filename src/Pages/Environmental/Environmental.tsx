@@ -52,7 +52,7 @@ const Environmental = () => {
           <Container className="content-container">
             <div className="white-wrapper">
               <div>
-                <div className={isMobile ? "title-mobile" : "title"}>
+                <div className={isMobile ? "env-title-mobile" : "env-title"}>
                   {trans.climateChange}
                 </div>
               </div>
@@ -81,7 +81,7 @@ const Environmental = () => {
                 </video>
               )}
               <div>
-                <div className={isMobile ? "title-mobile" : "title"}>
+                <div className={isMobile ? "env-title-mobile" : "env-title"}>
                   {trans.biodiversity}
                 </div>
               </div>
@@ -92,7 +92,7 @@ const Environmental = () => {
           <Container className="content-container">
             <div className="white-wrapper">
               <div>
-                <div className={isMobile ? "title-mobile" : "title"}>
+                <div className={isMobile ? "env-title-mobile" : "env-title"}>
                   {trans.plastic}
                 </div>
               </div>
@@ -121,7 +121,7 @@ const Environmental = () => {
                 </video>
               )}
               <div>
-                <div className={isMobile ? "title-mobile" : "title"}>
+                <div className={isMobile ? "env-title-mobile" : "env-title"}>
                   {trans.population}
                 </div>
               </div>
@@ -132,7 +132,7 @@ const Environmental = () => {
           <Container className="content-container">
             <div className="white-wrapper">
               <div>
-                <div className={isMobile ? "title-mobile" : "title"}>
+                <div className={isMobile ? "env-title-mobile" : "env-title"}>
                   {trans.consumer}
                 </div>
               </div>
