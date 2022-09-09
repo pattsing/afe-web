@@ -8,6 +8,7 @@ import Faq from "./Pages/Faq/Faq";
 import NewLanding from "./Pages/NewLanding/NewLanding";
 import Environmental from "./Pages/Environmental/Environmental";
 import Privacy from "./Pages/Privacy/Privacy";
+import FeatureArtist from "./Pages/FeatureArtist/FeatureArtist";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path="faq" element={<Faq />} />
       <Route path="about" element={<About />} />
       <Route path="privacy" element={<Privacy />} />
+      <Route path="feature-artist" element={<FeatureArtist />} />
     </Routes>
   );
 }
