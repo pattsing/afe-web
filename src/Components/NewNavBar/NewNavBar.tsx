@@ -14,6 +14,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import nav_icon from "../../Assets/afelogo-left-white-nobg.png";
 import { useMediaQuery } from "react-responsive";
 import menuIcon from "../../Assets/menu.png";
+import { Button, Menu, MenuItem } from "@mui/material";
 
 type Anchor = "top" | "left" | "bottom" | "right";
 
@@ -28,6 +29,20 @@ const NewNavBar = () => {
   var buyNFTElement = document.getElementById("buyNFT");
   var aboutElement = document.getElementById("about");
   var faqElement = document.getElementById("faq");
+
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+  const onMenuItemSelect = () => {
+    setAnchorEl(null);
+    navigate("/feature-artist");
+  };
+
   useEffect(() => {
     // Update the document title using the browser API
     buyNFTElement = document.getElementById("buyNFT");
@@ -47,6 +62,32 @@ const NewNavBar = () => {
         return (
           <div className="nav-item" onClick={() => navigate("/artworks")}>
             {tabName}
+          </div>
+        );
+      case "Feature Artist":
+        return (
+          <div>
+            <div
+              aria-controls={open ? "basic-menu" : undefined}
+              aria-haspopup="true"
+              aria-expanded={open ? "true" : undefined}
+              onClick={(event: React.MouseEvent<HTMLDivElement>) =>
+                handleClick(event)
+              }
+            >
+              {"Feature Artist"}
+            </div>
+            <Menu
+              id="basic-menu"
+              anchorEl={anchorEl}
+              open={open}
+              onClose={handleClose}
+              MenuListProps={{
+                "aria-labelledby": "basic-button",
+              }}
+            >
+              <MenuItem onClick={() => onMenuItemSelect()}>Vasan</MenuItem>
+            </Menu>
           </div>
         );
       case "About Us":

@@ -20,6 +20,11 @@
     ]
   },
   {
+    "tabName": "Feature Artist",
+    "tabRoute": "/feature-artists",
+    "tabMenu": ["Vasan"]
+  },
+  {
     "tabName": "How to Buy NFT",
     "tabRoute": "/buy-nft"
   },
