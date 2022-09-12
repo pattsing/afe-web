@@ -68,6 +68,7 @@ const NewNavBar = () => {
         return (
           <div>
             <div
+            className="nav-item"
               aria-controls={open ? "basic-menu" : undefined}
               aria-haspopup="true"
               aria-expanded={open ? "true" : undefined}

@@ -73,12 +73,12 @@ const NewLanding = () => {
             >
               SMART CONTRACT ADDRESS:{" "}
               <a
-                href="https://etherscan.io/"
+                href="https://etherscan.io/address/0x24fd209263288209c9E2A6909E6Bf9e9df8A4c9d#code"
                 style={{
                   color: "#000000",
                 }}
               >
-                TBA
+                0x24fd209263288209c9E2A6909E6Bf9e9df8A4c9d
               </a>
             </div>
 
