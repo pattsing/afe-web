@@ -87,9 +87,10 @@ const NewLanding = () => {
                 isMobile ? "fire-button-left-mobile" : "fire-button-left"
               }
             >
+              
               <AFEButton
                 title={"GO TO OPENSEA COLLECTION"}
-                onclick={() => eiei}
+                onclick={() => window.open("https://opensea.io/collection/afe-nft", '_blank')}
                 isBlack={true}
               />
             </div>

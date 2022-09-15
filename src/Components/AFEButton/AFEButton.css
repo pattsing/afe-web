@@ -8,6 +8,7 @@
   border-color: black;
   width: fit-content;
   font-size: 2vw;
+  cursor: pointer;
 }
 
 .afe-button-white-mobile {
@@ -19,6 +20,7 @@
   border-color: white;
   width: fit-content;
   font-size: 2vw;
+  cursor: pointer;
 }
 
 .afe-button-black {
@@ -31,6 +33,7 @@
   border-color: black;
   width: fit-content;
   font-size: 1vw;
+  cursor: pointer;
 }
 
 .afe-button-white {
@@ -42,6 +45,7 @@
   border-color: white;
   width: fit-content;
   font-size: 1vw;
+  cursor: pointer;
 }
 
 .afe-button-black:hover {
