@@ -90,6 +90,7 @@ const NewLanding = () => {
               <div
                 style={{
                   display: "flex",
+                  justifyContent: "space-evenly",
                 }}
               >
                 {" "}
