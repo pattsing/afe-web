@@ -29,7 +29,18 @@ function Footer() {
     <div className="footer">
       {logoImage()}
       <div>Copyright ©2022 AFE-NFT. All Right Reserved</div>
-      <div>Contact us: info@afe-nft.com</div>
+      <div>
+      <a
+          style={{
+            color: "#000000",
+            cursor: "pointer",
+            textDecoration: "underline",
+          }}
+          onClick={() => window.location.href = 'mailto:info@afe-nft.com'}
+        >
+          Contact us: info@afe-nft.com
+        </a>
+      </div>
       <div>
         <a
           style={{

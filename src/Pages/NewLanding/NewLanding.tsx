@@ -87,12 +87,30 @@ const NewLanding = () => {
                 isMobile ? "fire-button-left-mobile" : "fire-button-left"
               }
             >
-              
-              <AFEButton
-                title={"GO TO OPENSEA COLLECTION"}
-                onclick={() => window.open("https://opensea.io/collection/afe-nft", '_blank')}
-                isBlack={true}
-              />
+              <div
+                style={{
+                  display: "flex",
+                }}
+              >
+                {" "}
+                <AFEButton
+                  title={"GO TO OPENSEA COLLECTION"}
+                  onclick={() =>
+                    window.open(
+                      "https://opensea.io/collection/afe-nft",
+                      "_blank"
+                    )
+                  }
+                  isBlack={true}
+                />
+                <AFEButton
+                  title={"Official Twitter Account"}
+                  onclick={() =>
+                    window.open("https://twitter.com/NftAfe", "_blank")
+                  }
+                  isBlack={true}
+                />
+              </div>
             </div>
           </div>
           <a
